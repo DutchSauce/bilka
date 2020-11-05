@@ -2,4 +2,137 @@
   margin: 0;
   padding: 0; }
 
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #F3F3F3; }
+
+  header {
+    width: 100%;
+    height: 140px;
+    background-color: #ffffff; }
+
+  h1 {
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #199FE3; }
+
+  h2 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 34PX;
+    text-align: center;
+    margin-top: 30px; }
+
+  .text-forside {
+    color: #5E6C7C;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-left: 22px;
+    margin-right: 22px; }
+
+  a {
+    list-style: none;
+    text-decoration: none; }
+
+  .pcguide {
+    width: 333px;
+    height: 45px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    background: #199FE3;
+    padding-top: 20px;
+    margin-top: 50px;
+    margin-left: 21px;
+    margin-right: 25px;
+    box-shadow: 1px 3px 6px #888888; }
+
+  .sorter-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 22px; }
+
+  .filter {
+    width: 140px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    background-color: #ffffff;
+    box-shadow: 1px 3px 6px #888888; }
+
+  .produkt {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px; }
+
+  .produkt-pc {
+    width: 333px;
+    height: 545px;
+    background: #ffffff;
+    margin-top: 20px;
+    margin-left: 21px;
+    overflow: auto; }
+
+  .frifragt {
+    background: #1E2329;
+    color: #ffffff;
+    font-size: 11px;
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    line-height: 11px;
+    width: 50px;
+    height: 35px;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 10px; }
+
+  .lenovo {
+    width: 100%; }
+
+  .pc-title {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Heebo', sans-serif;
+    margin-left: 26px;
+    margin-right: 26px;
+    margin-top: 10px; }
+
+  .pc-beskrivelse {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    color: #5E6C7C;
+    margin-top: 10px;
+    margin-left: 26px;
+    margin-right: 26px; }
+
+  .click-lager {
+    text-align: right;
+    font-family: 'Segoe UI', sans-serif;
+    color: #5E6C7C;
+    margin-top: 20px;
+    margin-right: 26px; }
+
+  .check-lager {
+    width: 5%; }
+
+  .hr-produkt {
+    margin-top: 20px;
+    color: #5E6C7C;
+    margin-left: 26px; }
+
+  .pris {
+    font-size: 26px;
+    color: #199FE3;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 900; } }
+
 /*# sourceMappingURL=bilka-syle.css.map */
