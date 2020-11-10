@@ -5,15 +5,15 @@ $textcolor: #5E6C7C;
 $checkcolor: green;
 $fifcolor: #72cec1;
 
-html{
+html {
   overflow-x: hidden;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -22,7 +22,7 @@ nav{
   font-family: 'Segoe UI', sans-serif;
 }
 
-.logo logo{
+.logo logo {
   margin-bottom: 10px;
   width: 18%;
 }
@@ -31,56 +31,55 @@ nav{
   list-style: none;
 }
 
-.nav-links{
+.nav-links {
   display: flex;
   justify-content: space-around;
   width: 30%;
 }
 
-.nav-links a{
-color: rgb(226, 226, 226);
-text-decoration: none;
-letter-spacing: 3px;
-font-weight: bold;
-font-size: 14px;
+.nav-links a {
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
 }
 
-.burger{
+.burger {
   display: none;
   cursor: pointer;
 }
 
-.burger div{
-width: 25px;
-height: 3px;
-background-color: $bilkacolor;
-margin: 5px;
-transition: all 0.3s ease;
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: $bilkacolor;
+  margin: 5px;
+  transition: all 0.3s ease;
 }
-
 @keyframes navLinkFade {
-  from{
+  from {
     opacity: 0;
     transform: translateX(50px);
   }
-  to{
+
+  to {
     opacity: 1;
     transform: translateX(0px);
   }
 }
 
-.toggle .line1{
+.toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-.toggle .line2{
+.toggle .line2 {
   opacity: 0;
 }
 
-.toggle .line3{
+.toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
-
 @media screen and (max-width: 768px) {
   body {
     background-color: $backcolor;
@@ -94,66 +93,63 @@ transition: all 0.3s ease;
     overflow-x: hidden;
   }
 
-  .logo-ikon .logo{
+  .logo-ikon .logo {
     margin-bottom: 10px;
     width: 18%;
   }
 
-  .logo-ikon .search{
+  .logo-ikon .search {
     width: 8%;
     margin-left: 20px;
   }
 
-   .logo-ikon .heart{
-     width: 8%;
-     margin-left: 20px;
-
-   }
-
-  .logo-ikon .profil{
+  .logo-ikon .heart {
     width: 8%;
     margin-left: 20px;
   }
 
-  .logo-ikon .kurv{
+  .logo-ikon .profil {
+    width: 8%;
+    margin-left: 20px;
+  }
+
+  .logo-ikon .kurv {
     width: 8%;
     margin-left: 20px;
   }
 
   .breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  background-color: #eee;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
   }
 
-.breadcrumb li {
-  display: inline;
-  font-size: 14px;
-  color: #5E6C7C;
-  font-family: 'Segoe UI', sans-serif;
+  .breadcrumb li {
+    display: inline;
+    font-size: 14px;
+    color: #5E6C7C;
+    font-family: 'Segoe UI', sans-serif;
   }
 
-.breadcrumb li+li:before {
-  padding: 8px;
-  content: url(images/icon-arrow.png);
-  background-size: cover;
+  .breadcrumb li+li:before {
+    padding: 8px;
+    content: url(images/icon-arrow.png)"\00a0";
+    background-size: cover;
   }
 
-.breadcrumb li a {
-  color: #000;
-  text-decoration: none;
+  .breadcrumb li a {
+    color: #000;
+    text-decoration: none;
   }
 
-.breadcrumb li a:hover {
-  color: $bilkacolor;
-  text-decoration: underline;
+  .breadcrumb li a:hover {
+    color: $bilkacolor;
   }
-
-
-/* SKAL RETTELSE TIL!! HUSK OG FJERN DISPLAY NONE!! */
-  .nav-links{
+  /* SKAL RETTELSE TIL!! HUSK OG FJERN DISPLAY NONE!! */
+  .nav-links {
     position: absolute;
-    left: 0px;
+    left: 0;
     height: 92vh;
     top: 8vh;
     background-color: #5d4954;
@@ -163,14 +159,13 @@ transition: all 0.3s ease;
     transform: translateX(100%);
     transition: transform 0.5 ease-in;
     display: none;
-
   }
 
-  .nav-links li{
+  .nav-links li {
     opacity: 0;
   }
 
-  .burger{
+  .burger {
     display: block;
     margin-right: 15px;
     padding-right: 50px;
@@ -178,15 +173,15 @@ transition: all 0.3s ease;
     border-color: $bilkacolor;
   }
 
-.menu{
-  position: relative;
-  bottom: 22px;
-  left: 40px;
-}
+  .menu {
+    position: relative;
+    bottom: 22px;
+    left: 40px;
+  }
 
-.nav-active{
-  transform: translateX(0%);
-}
+  .nav-active {
+    transform: translateX(0%);
+  }
 
   h1 {
     font-family: 'Heebo', sans-serif;
@@ -251,7 +246,7 @@ transition: all 0.3s ease;
     margin-top: 20px;
   }
 
-  .produkt-pc a{
+  .produkt-pc a {
     list-style: none;
     text-decoration: none;
   }
@@ -328,9 +323,7 @@ transition: all 0.3s ease;
     font-weight: 900;
   }
 }
-
 /* PRODUKT SIDE - bilka-produkt.html */
-
 .pc-help {
   width: 333px;
   height: 45px;
@@ -344,27 +337,23 @@ transition: all 0.3s ease;
   box-shadow: 1px 3px 6px #888888;
 }
 
-a{
+a {
   display: block;
 }
-
 /* PC Teknik guide sider - pc-overblik.html */
-
-h2{
+h2 {
   font-family: 'Heebo', sans-serif;
   font-size: 22px;
   text-align: center;
   margin-top: 30px;
 }
 
-.teknik-text{
+.teknik-text {
   color: #5E6C7C;
   font-family: 'Segoe UI', sans-serif;
   margin-left: 30px;
 }
-
 /* MARKERE CIRKLERNE PÅ SIDEN I FORM WIZARDEN */
-
 .steps {
   padding-top: 20px;
 }
@@ -379,14 +368,12 @@ h2{
   display: inline-block;
   opacity: 0.5;
 }
-
 /* MARKERE HVILKEN SIDE DU ER INDE PÅ I  FORM WIZARDEN */
 .step.active {
   background-color: #F15C22;
   opacity: 1;
   border: solid 0.6px;
 }
-
 /* MARKERE HVILKEN SIDER DER ER FÆRDIGE I FORM WIZARDEN  */
 .step.finish {
   background-color: #F15C22;
@@ -394,21 +381,256 @@ h2{
   border: solid 0.6px;
 }
 
-.cpu-brain{
+.cpu-brain {
   width: 90%;
   margin-left: 20px;
 }
 
-h4{
+h4 {
   font-family: 'Heebo', sans-serif;
   text-align: left;
   margin-left: 20px;
 }
 
-.teknik-overskrift-text{
+.teknik-overskrift-text {
   font-family: 'Segoe UI', sans-serif;
   margin-top: 10px;
   margin-left: 20px;
   margin-right: 20px;
+}
+/* Bilka Guide side - bilka-guide.html */
+.b-guidetitel {
+  font-family: 'Heebo', sans-serif;
+  font-size: 23px;
+  margin-left: 21px;
+}
 
+.b-guideoverskrift {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+  font-size: 23px;
+  margin-left: 21px;
+}
+
+.b-guidetext {
+  font-family: 'Segoe UI', sans-serif;
+  color: #5E6C7C;
+  line-height: 2.5vh;
+  font-size: 17px;
+  margin-left: 21px;
+  margin-right: 21px;
+}
+
+.illustrationer {
+  box-sizing: border-box;
+  margin-top: 30px;
+  margin-left: 21px;
+  margin-right: 21px;
+}
+
+.illustrationer img {
+  width: 24%;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.startguide {
+  width: 254px;
+  height: 45px;
+  font-family: 'Heebo', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  background: $bilkacolor;
+  padding-top: 20px;
+  margin-top: 50px;
+  margin-left: 61px;
+  margin-right: 25px;
+  box-shadow: 1px 3px 6px #888888;
+}
+/* PROCESSOR SIDE - processor.html */
+.cpu-indgang {
+  width: 89%;
+  margin-left: 21px;
+}
+
+.forestil {
+  font-family: 'Segoe UI', sans-serif;
+  color: #000000;
+  line-height: 2.5vh;
+  font-size: 17px;
+  margin-left: 21px;
+  margin-right: 21px;
+}
+
+.vaelg {
+  width: 254px;
+  height: 45px;
+  font-family: 'Heebo', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  background: $bilkacolor;
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-left: 61px;
+  margin-right: 25px;
+  box-shadow: 1px 3px 6px #888888;
+}
+/* VÆLG PROCESSOR SIDE - vaelg-processor.html */
+.cpu-vaelg {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.i3-vaelg {
+  width: 351px;
+  height: 226px;
+  background-color: #ffffff;
+  margin-top: 13px;
+  border: none;
+}
+
+.cpu-indgang-vaelg {
+  width: 163px;
+  height: 182px;
+  background-image: url("images/bilka-indgang-med-en-brain.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  float: left;
+}
+
+.i5-vaelg {
+  width: 351px;
+  height: 226px;
+  background-color: #ffffff;
+  margin-top: 10px;
+  border: none;
+}
+
+.cpu2-indgang-vaelg {
+  width: 163px;
+  height: 182px;
+  background-image: url("images/brainz2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  float: left;
+}
+
+.i7-vaelg {
+  width: 351px;
+  height: 226px;
+  background-color: #ffffff;
+  margin-top: 10px;
+  border: none;
+}
+
+.cpu3-indgang-vaelg {
+  width: 163px;
+  height: 182px;
+  background-image: url("images/brainz3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  float: left;
+}
+
+.intel-amd {
+  font-family: 'Heebo', sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.undertekst {
+  font-family: 'Heebo', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.info-tekst {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #5E6C7C;
+  text-align: left;
+  padding-left: 190px;
+  line-height: 2vh;
+  padding-right: 10px;
+}
+
+.vis-eks{
+  position: absolute;
+  width: 95px;
+  background-color: $bilkacolor;
+  border: none;
+  font-size: 12px;
+  color: #ffffff;
+  font-family: 'Heebo', sans-serif;
+  font-weight: bold;
+  top: 46vh;
+  left: 60vw;
+  padding: 5px;
+}
+
+.vis-eks2{
+  position: absolute;
+  width: 95px;
+  background-color: $bilkacolor;
+  border: none;
+  font-size: 12px;
+  color: #ffffff;
+  font-family: 'Heebo', sans-serif;
+  font-weight: bold;
+  top: 75vh;
+  left: 60vw;
+  padding: 5px;
+}
+
+.vis-eks3{
+  position: absolute;
+  width: 95px;
+  background-color: $bilkacolor;
+  border: none;
+  font-size: 12px;
+  color: #ffffff;
+  font-family: 'Heebo', sans-serif;
+  font-weight: bold;
+  top: 104vh;
+  left: 60vw;
+  padding: 5px;
+}
+
+.videre-tilbage{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tilbage{
+  border: none;
+  background-color: #ffffff;
+  font-family: 'Heebo', sans-serif;
+  font-weight: bold;
+  padding: 5px 30px 5px 30px;
+  box-shadow: 1px 3px 6px #888888;
+  margin-left: 60px;
+}
+
+.videre{
+  border: none;
+  background-color: #ffffff;
+  font-family: 'Heebo', sans-serif;
+  font-weight: bold;
+  color: $bilkacolor;
+  padding: 5px 30px 5px 30px;
+  box-shadow: 1px 3px 6px #888888;
+  margin-right: 60px;
 }
