@@ -446,8 +446,39 @@ button:hover {
 }
 
 .cpu-brain {
-  width: 90%;
-  margin-left: 20px;
+  width: 331px;
+  height: 186px;
+  background-image: url(images/bilka-indgang-med-brainz.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 12px;
+}
+
+.harddisk-img{
+  width: 331px;
+  height: 186px;
+  background-image: url(images/indkoebsvognsamlet.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 12px;
+}
+
+.ram-img{
+  width: 331px;
+  height: 186px;
+  background-image: url(images/bilkareol-Recovered.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 12px;
+}
+
+.grafik-img{
+  width: 331px;
+  height: 186px;
+  background-image: url(images/grafikkort.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 12px;
 }
 
 h4 {
