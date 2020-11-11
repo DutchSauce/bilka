@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta property="og:image" content="images/favicon.png">
   <link rel="stylesheet" href="bilka-syle.css" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <title>Bilka</title>
@@ -47,139 +48,64 @@
 
   </header>
 <main>
+  <div class="luk-tab">
+    <a href="bilka-produkt.html">&times;</a>
+  </div>
     <h2>HJÆLP TIL TEKNIK FNIDDEREN</h2>
     <p class="teknik-text">Har du også problemer med at forstå teknik fnidderen,
     når du skal handle ny bærbar?</p>
-    <!-- DE CIRKLERE SOM SES PÅ SIDEN, OG INDIKERE HVOR LANGT DU ER I PROCESSEN. NÅR DU HAR UDFYLDT ET STEP, VIL STEPPET STADIG LYSE. -->
-    <div class="steps">
-      <span class="step active"></span>
-      <span class="step"></span>
-      <span class="step"></span>
-      <span class="step"></span>
-      <span class="step"></span>
-      <span class="step"></span>
-    </div>
 
-    <!-- DETTE ER STEP 1, OG DERFOR VIL VÆRE ALT I DENNE DIV
-    BLIVE VIST PÅ STEP 1 PÅ FORM WIZARDEN. ALT ANDET INDHOLD VIL BLIVE
-    SKJULT GRUNDET INDSTILLINGERNE I CSS -->
-
-    <div class="tab"> STEP 1
-  <h2>SENESTE SKABELONER</h2>
-  <div class="samletknapper">
-    <button class="button button21"> EURO PALLE - <b> "SPIR"</b></button>
-
-    <button class="button button21"> HALV PALLE - <b> "MATHILDE"</b></button>
-
-    <button class="button button26"> KVART PALLE - <b> "EGELYKKE"</b></button>
-  </div>
-  <H3>VÆLG SKABELON</H3>
-
-    <div class="accordion">
-
-    <div class="accordion-tab">
-    <input id="toggle1" type="checkbox" class="accordion-toggle" name="toggle" />
-    <label for="toggle1">Skabeloner</label>
-    <div class="accordion-content">
-        <div class="samletknapper2">
-          <button class="button button21"></button>
-
-          <button class="button button21"></button>
-
-          <button class="button button26"></button>
-        </div>
-    </div>
-    </div>
-    </div>
-
-    <div class="knapbox">
-      <div class="knapbox2">
-        <button type="button" id="prevBtnskabelon" onclick="nextPrev(-1)">ANNULLER</button>
-        <button type="button" id="nextBtnskabelon" onclick="nextPrev(1)">VIDERE</button>
+    <form id="regForm" action="/action_page.php">
+      <!-- Circles which indicates the steps of the form: -->
+      <div style="text-align:center;margin-bottom:40px;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
       </div>
-    </div>
-
-</div>
-
-
-
-</div>
-
-<div class="tab2">
-  <div class="tab">STEP 2 <br>
-    <h2>GENNEMGÅ DIN <br>MIX-PALLETERING</h2>
-    <div class="gennemgang"v>
-
-        <div class="ost2">
-        <h4>Pikant Ost</h4>
-        <h5>2 Kasser.</h5><br>
-        </div>
-
-        <div class="ost3">
-        <h4>Skinke Ost</h4><h5>1 Kasse.</h5><br>
-        </div>
-
-        <div class="ost4">
-        <h4>Naturel Ost</h4><h5>1 Kasse.</h5><br>
-        </div>
-
-        <div class="ost5">
-        <h4>Bacon Ost</h4><h5>1 Kasse.</h5><br>
-        </div>
-
-        <div class="ost6">
-        <h4>Garlí Ost</h4><h5>1 Kasse.</h5><br>
-        </div>
-
-        <div class="ost7">
-        <h4>Peber Ost</h4><h5>1 Kasse.</h5><br>
-        </div>
-
-      </div>
-      <div class="praktisk">
-        <h2>PRAKTISK INFO:</h2>
-        <h3>EURO PALLE - 80x120x14,5 <br> “BUKO” - FLØDEOST <br> 7 PRODUKTER - 5 LAG <br> 280 KG INKL. PALLE <br> SKAL FOLIERES</h3>
-      </div>
-    </div>
-
-    <div class="knapbox">
-      <div class="knapbox2">
-        <button type="button" id="prevBtnskabelon" onclick="nextPrev(-1)">ÆNDRE</button>
-        <button type="button" id="nextBtnskabelon" onclick="nextPrev(1)">VIDERE</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div class="tab">STEP 3
-  <div class="tabs">
-    <div class="gennemgang2">
-      <h2>Er denne palletering klar til <br> at blive startet?</h2>
-
-
-      <div class="knapbox">
-        <div class="knapbox2">
-          <button type="button" id="prevBtnskabelon" onclick="nextPrev(-1)">ANNULLER</button>
-          <button type="button" id="nextBtnskabelon" onclick="nextPrev(1)">START</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-<h4>PROCESSOR - CPU</h4>
+    <!-- One "tab" for each step in the form: -->
+    <div class="tab">
+      <h4>PROCESSOR - CPU</h4>
 <img class="cpu-brain" src="images/bilka-indgang-med-brainz.png" alt="En illustration til CPU">
 <p class="teknik-overskrift-text"><b>Forestil dig, at du er ude og handle i Bilka.
   Din hjerne skal derfor planlægge og bestemme hvad der skal handles ind.</b>
 <br><br>Din hjerne vil, efter en computers terminologi være ligesom kerner i processoren,
 der tilsvarende håndterer alt “tænkningen”.
 Jo flere kerner i processoren, jo bedre kan din computer håndtere opgaverne.
-Derfor kan det være en fordel at have flere hjerner ‘eller kerner’,
+<br><br>Derfor kan det være en fordel at have flere hjerner ‘eller kerner’,
 til at håndtere en stor indkøbsliste eller opgave.</p>
+    </div>
+    <div class="tab"><h4>HARDDIRSK - HDD/SSD</h4>
+<img class="cpu-brain" src="images/indkoebsvognsamlet.png" alt="En illustration til CPU">
+<p class="teknik-overskrift-text"><b>Inden du handler ind, ved du hvor mange varer, du skal have med hjem.
+  Du skal derfor bestemme om du kan bruge en lille kurv eller en stor indkøbsvogn, til alle dine varer.</b>
+<br><br>Din valgte indkøbskurv eller vogn, er som harddiskkapacitet i computeren.
+<br><br>Alt hvad der er på din bærbare computer, som programmer, filer, billeder og videoer udgør en andel af harddiskens plads.</p>
+    </div>
+    <div class="tab"><h4>RAM</h4>
+<img class="cpu-brain" src="images/bilkareol-Recovered.png" alt="En illustration til CPU">
+<p class="teknik-overskrift-text"><b>Dine hænders bæreevne er afgørende for,
+  om du kan holde én eller flere varer på én gang, uden at tabe noget.</b>
+<br><br>Dine hænder svarer til RAM, som er computerens evne til at håndtere flere åbne programmer ad gangen.
+<br><br>Størrelsen på RAM, angivet i GB, bestemmer hvor stor en kapacitet computeren har til udførelse af de midlertidige opgaver.</p>
+    </div>
+    <div class="tab"><h4>GRAFIKKORT - GPU</h4>
+<img class="cpu-brain" src="images/grafikkort.png" alt="En illustration til CPU">
+<p class="teknik-overskrift-text"><b>Du er allergiker og skal derfor sikre dig, at der ingen allegener er i produktet.
+  Derfor er det vigtigt, at du tydeligt kan læse, hvad der står på varedeklarationen.</b>
+<br><br>Dine øjne er som grafikkortets funktion. Grafikkortet er sin egen komponent i computeren, ligesom processoren.
+<br><br>Forskellen er at processoren sørger for det administrerende, hvor imod grafikkortet bestemmer hvad der skal vises på skærmen.</p>
+    </div>
+    <div style="overflow:auto;">
+      <div style="float:right;">
+        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Tilbage</button>
+        <button type="button" id="nextBtn" onclick="nextPrev(1)">Videre</button>
+      </div>
+    </div>
+
+  </form>
 
 </main>
-
 <script type="text/javascript" defer src="breadcrump.js"></script>
 <script type="text/javascript" defer src="bilkascript.js"></script>
 </body>

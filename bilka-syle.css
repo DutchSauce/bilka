@@ -295,36 +295,88 @@ h2 {
   text-align: center;
   margin-top: 30px; }
 
+.luk-tab {
+  text-decoration: none;
+  list-style: none;
+  color: #199FE3;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  position: absolute;
+  right: 0;
+  top: 16vh; }
+
+.luk-tab a {
+  text-decoration: none;
+  list-style: none;
+  color: #000000;
+  font-size: 22px; }
+
 .teknik-text {
   color: #5E6C7C;
   font-family: 'Segoe UI', sans-serif;
   margin-left: 30px; }
 
-/* MARKERE CIRKLERNE PÅ SIDEN I FORM WIZARDEN */
-.steps {
-  padding-top: 20px; }
+#regForm {
+  background-color: #ffffff;
+  margin: 20px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px; }
 
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa; }
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd; }
+
+/* Hide all steps by default: */
+.tab {
+  display: none; }
+
+button {
+  background-color: #199FE3;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: 'Heebo', sans-serif;
+  cursor: pointer;
+  margin-top: 5vh;
+  margin-right: 12vw; }
+
+button:hover {
+  opacity: 0.8; }
+
+#prevBtn {
+  background-color: #bbbbbb; }
+
+/* Make circles that indicate the steps of the form: */
 .step {
-  height: 22px;
-  width: 22px;
-  margin: 0 35px;
-  background-color: #FFFFFF;
-  border: solid 0.6px;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
   border-radius: 50%;
   display: inline-block;
   opacity: 0.5; }
 
-/* MARKERE HVILKEN SIDE DU ER INDE PÅ I  FORM WIZARDEN */
 .step.active {
-  background-color: #F15C22;
-  opacity: 1;
-  border: solid 0.6px; }
+  opacity: 1; }
 
-/* MARKERE HVILKEN SIDER DER ER FÆRDIGE I FORM WIZARDEN  */
+/* Mark the steps that are finished and valid: */
 .step.finish {
-  background-color: #F15C22;
-  opacity: 1;
-  border: solid 0.6px; }
+  background-color: #199FE3; }
 
 .cpu-brain {
   width: 90%;
@@ -337,6 +389,7 @@ h4 {
 
 .teknik-overskrift-text {
   font-family: 'Segoe UI', sans-serif;
+  color: #5E6C7C;
   margin-top: 10px;
   margin-left: 20px;
   margin-right: 20px; }
