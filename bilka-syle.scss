@@ -380,10 +380,12 @@ h2 {
 #regForm {
   background-color: #ffffff;
   margin: 20px auto;
-  font-family: Raleway;
-  padding: 40px;
-  width: 70%;
-  min-width: 300px;
+}
+
+.span{
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 20px;
 }
 
 input {
@@ -412,8 +414,6 @@ button {
     font-size: 17px;
     font-family: 'Heebo', sans-serif;
     cursor: pointer;
-    margin-top: 5vh;
-    margin-right: 12vw;
 }
 
 button:hover {
@@ -422,6 +422,13 @@ button:hover {
 
 #prevBtn {
   background-color: #bbbbbb;
+}
+
+#nextBtn{
+  margin-top: 5vh;
+      margin-right: 33vw;
+      margin-bottom: 2vh;
+      padding: 10px;
 }
 
 /* Make circles that indicate the steps of the form: */
@@ -451,7 +458,7 @@ button:hover {
   background-image: url(images/bilka-indgang-med-brainz.png);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-right: 12px;
+  margin-left: 21px;
 }
 
 .harddisk-img{
@@ -460,7 +467,7 @@ button:hover {
   background-image: url(images/indkoebsvognsamlet.png);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-right: 12px;
+  margin-left: 21px;
 }
 
 .ram-img{
@@ -469,7 +476,7 @@ button:hover {
   background-image: url(images/bilkareol-Recovered.png);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-right: 12px;
+  margin-left: 21px;
 }
 
 .grafik-img{
@@ -478,7 +485,7 @@ button:hover {
   background-image: url(images/grafikkort.png);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-right: 12px;
+  margin-left: 21px;
 }
 
 h4 {
