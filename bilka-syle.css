@@ -321,7 +321,6 @@ h2 {
   margin-left: 30px; }
 
 #regForm {
-  background-color: #ffffff;
   margin: 20px auto; }
 
 .span {
@@ -348,6 +347,7 @@ button {
   background-color: #199FE3;
   color: #ffffff;
   border: none;
+  width: 120px;
   padding: 10px 20px;
   font-size: 17px;
   font-family: 'Heebo', sans-serif;
@@ -357,20 +357,22 @@ button:hover {
   opacity: 0.8; }
 
 #prevBtn {
-  background-color: #bbbbbb; }
+  background-color: #bbbbbb;
+  box-shadow: 1px 3px 6px #888888; }
 
 #nextBtn {
   margin-top: 5vh;
-  margin-right: 33vw;
+  margin-right: 17vw;
   margin-bottom: 2vh;
-  padding: 10px; }
+  padding: 10px;
+  box-shadow: 1px 3px 6px #888888; }
 
 /* Make circles that indicate the steps of the form: */
 .step {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbbbbb;
+  height: 20px;
+  width: 20px;
+  margin: 0 25px;
+  background-color: #199FE3;
   border: none;
   border-radius: 50%;
   display: inline-block;
@@ -386,7 +388,7 @@ button:hover {
 .cpu-brain {
   width: 331px;
   height: 186px;
-  background-image: url(images/bilka-indgang-med-brainz.png);
+  background-image: url("images/bilka-indgang-med-brainz.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 21px; }
@@ -394,7 +396,7 @@ button:hover {
 .harddisk-img {
   width: 331px;
   height: 186px;
-  background-image: url(images/indkoebsvognsamlet.png);
+  background-image: url("images/indkoebsvognsamlet.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 21px; }
@@ -402,7 +404,7 @@ button:hover {
 .ram-img {
   width: 331px;
   height: 186px;
-  background-image: url(images/bilkareol-Recovered.png);
+  background-image: url("images/bilkareol-Recovered.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 21px; }
@@ -410,7 +412,7 @@ button:hover {
 .grafik-img {
   width: 331px;
   height: 186px;
-  background-image: url(images/grafikkort.png);
+  background-image: url("images/grafikkort.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 21px; }
@@ -627,7 +629,7 @@ h4 {
   background-color: #ffffff;
   font-family: 'Heebo', sans-serif;
   font-weight: bold;
-  padding: 5px 30px 5px 30px;
+  padding: 5px 30px;
   box-shadow: 1px 3px 6px #888888;
   margin-left: 60px; }
 
@@ -637,7 +639,7 @@ h4 {
   font-family: 'Heebo', sans-serif;
   font-weight: bold;
   color: #199FE3;
-  padding: 5px 30px 5px 30px;
+  padding: 5px 30px;
   box-shadow: 1px 3px 6px #888888;
   margin-right: 60px; }
 

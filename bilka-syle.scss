@@ -340,7 +340,6 @@ nav {
 a {
   display: block;
 }
-
 /* PC Teknik guide sider - pc-overblik.html */
 h2 {
   font-family: 'Heebo', sans-serif;
@@ -349,7 +348,7 @@ h2 {
   margin-top: 30px;
 }
 
-.luk-tab{
+.luk-tab {
   text-decoration: none;
   list-style: none;
   color: $bilkacolor;
@@ -364,7 +363,7 @@ h2 {
   top: 16vh;
 }
 
-.luk-tab a{
+.luk-tab a {
   text-decoration: none;
   list-style: none;
   color: #000000;
@@ -378,11 +377,10 @@ h2 {
 }
 
 #regForm {
-  background-color: #ffffff;
   margin: 20px auto;
 }
 
-.span{
+.span {
   text-align: center;
   margin-bottom: 30px;
   padding-top: 20px;
@@ -395,12 +393,10 @@ input {
   font-family: Raleway;
   border: 1px solid #aaaaaa;
 }
-
 /* Mark input boxes that gets an error on validation: */
 input.invalid {
   background-color: #ffdddd;
 }
-
 /* Hide all steps by default: */
 .tab {
   display: none;
@@ -408,12 +404,13 @@ input.invalid {
 
 button {
   background-color: $bilkacolor;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 17px;
-    font-family: 'Heebo', sans-serif;
-    cursor: pointer;
+  color: #ffffff;
+  border: none;
+  width: 120px;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: 'Heebo', sans-serif;
+  cursor: pointer;
 }
 
 button:hover {
@@ -422,21 +419,22 @@ button:hover {
 
 #prevBtn {
   background-color: #bbbbbb;
+  box-shadow: 1px 3px 6px #888888;
 }
 
-#nextBtn{
+#nextBtn {
   margin-top: 5vh;
-      margin-right: 33vw;
-      margin-bottom: 2vh;
-      padding: 10px;
+  margin-right: 17vw;
+  margin-bottom: 2vh;
+  padding: 10px;
+  box-shadow: 1px 3px 6px #888888;
 }
-
 /* Make circles that indicate the steps of the form: */
 .step {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbbbbb;
+  height: 20px;
+  width: 20px;
+  margin: 0 25px;
+  background-color: $bilkacolor;
   border: none;
   border-radius: 50%;
   display: inline-block;
@@ -446,7 +444,6 @@ button:hover {
 .step.active {
   opacity: 1;
 }
-
 /* Mark the steps that are finished and valid: */
 .step.finish {
   background-color: $bilkacolor;
@@ -455,34 +452,34 @@ button:hover {
 .cpu-brain {
   width: 331px;
   height: 186px;
-  background-image: url(images/bilka-indgang-med-brainz.png);
+  background-image: url("images/bilka-indgang-med-brainz.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 21px;
 }
 
-.harddisk-img{
+.harddisk-img {
   width: 331px;
   height: 186px;
-  background-image: url(images/indkoebsvognsamlet.png);
+  background-image: url("images/indkoebsvognsamlet.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 21px;
 }
 
-.ram-img{
+.ram-img {
   width: 331px;
   height: 186px;
-  background-image: url(images/bilkareol-Recovered.png);
+  background-image: url("images/bilkareol-Recovered.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 21px;
 }
 
-.grafik-img{
+.grafik-img {
   width: 331px;
   height: 186px;
-  background-image: url(images/grafikkort.png);
+  background-image: url("images/grafikkort.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 21px;
@@ -667,7 +664,7 @@ h4 {
   padding-right: 10px;
 }
 
-.vis-eks{
+.vis-eks {
   position: absolute;
   width: 95px;
   background-color: $bilkacolor;
@@ -681,7 +678,7 @@ h4 {
   padding: 5px;
 }
 
-.vis-eks2{
+.vis-eks2 {
   position: absolute;
   width: 95px;
   background-color: $bilkacolor;
@@ -695,7 +692,7 @@ h4 {
   padding: 5px;
 }
 
-.vis-eks3{
+.vis-eks3 {
   position: absolute;
   width: 95px;
   background-color: $bilkacolor;
@@ -709,7 +706,7 @@ h4 {
   padding: 5px;
 }
 
-.videre-tilbage{
+.videre-tilbage {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -717,23 +714,23 @@ h4 {
   margin-bottom: 20px;
 }
 
-.tilbage{
+.tilbage {
   border: none;
   background-color: #ffffff;
   font-family: 'Heebo', sans-serif;
   font-weight: bold;
-  padding: 5px 30px 5px 30px;
+  padding: 5px 30px;
   box-shadow: 1px 3px 6px #888888;
   margin-left: 60px;
 }
 
-.videre{
+.videre {
   border: none;
   background-color: #ffffff;
   font-family: 'Heebo', sans-serif;
   font-weight: bold;
   color: $bilkacolor;
-  padding: 5px 30px 5px 30px;
+  padding: 5px 30px;
   box-shadow: 1px 3px 6px #888888;
   margin-right: 60px;
 }
