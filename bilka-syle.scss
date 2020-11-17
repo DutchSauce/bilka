@@ -552,6 +552,15 @@ h4 {
 
 /* GUIDE VEJLEDNING - guide-vejledning.html */
 
+.grå-blok{
+  background-color: $backcolor;
+  width: 25px;
+  height: 560px;
+  position: absolute;
+  left: 86%;
+  z-index: 500;
+}
+
 .gif{
   width: 80%;
   height: 0;
@@ -663,12 +672,14 @@ iframe{
   font-family: 'Heebo', sans-serif;
   font-size: 23px;
   font-weight: bold;
+  color: #000000;
 }
 
 .undertekst {
   font-family: 'Heebo', sans-serif;
   font-size: 13px;
   font-weight: bold;
+  color: #000000;
 }
 
 .info-tekst {

@@ -476,6 +476,14 @@ h4 {
   box-shadow: 1px 3px 6px #888888; }
 
 /* GUIDE VEJLEDNING - guide-vejledning.html */
+.grå-blok {
+  background-color: #F3F3F3;
+  width: 25px;
+  height: 560px;
+  position: absolute;
+  left: 86%;
+  z-index: 500; }
+
 .gif {
   width: 80%;
   height: 0;
@@ -575,12 +583,14 @@ iframe {
 .intel-amd {
   font-family: 'Heebo', sans-serif;
   font-size: 23px;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #000000; }
 
 .undertekst {
   font-family: 'Heebo', sans-serif;
   font-size: 13px;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #000000; }
 
 .info-tekst {
   font-family: 'Segoe UI', sans-serif;
