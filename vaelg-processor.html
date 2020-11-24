@@ -46,40 +46,115 @@
 
   </header>
   <h3 class="b-guidetitel"><b>FIND DIN NYE PC</b></h3>
-  <h3 class="b-guideoverskrift">"PROCESSOR - CPU"</h3>
-  <div class="cpu-vaelg">
-    <button class="i3-vaelg">
-      <div class="cpu-indgang-vaelg"></div>
-      <p class="intel-amd">i3 & RYZEN3</p>
-      <p class="undertekst">Som at handle ind alene</p>
-      <p class="info-tekst">Typisk 2 kerner.<br>
-        Perfekt til lette opgaver. Mindste processor i serien.</p>
+  <h3 class="b-guideoverskrift">VÆLG PROCESSOR</h3>
+
+  <div id="Processortype">
+    <br>
+    <div class="cpu-vaelg">
+
+
+        <label class="i3-vaelg">
+        <input type="radio" id="one" value="i3" v-model="cpu">
+        <div class="check-box">
+        <div class="cpu-indgang-vaelg"></div>
+        <p class="intel-amd">i3 & RYZEN3</p>
+        <p class="undertekst">Som at handle ind alene</p>
+        <p class="info-tekst">Typisk 2 kerner.<br>
+          Perfekt til lette opgaver. Mindste processor i serien.</p>
         <button class="vis-eks">VIS EKSEMPEL</button>
-    </button>
-    <button class="i5-vaelg">
-      <div class="cpu2-indgang-vaelg"></div>
-      <p class="intel-amd">i3 & RYZEN3</p>
-      <p class="undertekst">Som at være to afsted</p>
-      <p class="info-tekst">Typisk 4 kerner. <br>
-        Perfekt til større opgaver. Middel processor i serien.</p>
+        <button class="question"></button>
+        </div>
+      </label>
+
+      <br>
+
+      <label class="i5-vaelg">
+        <input type="radio" id="two" value="i5" v-model="cpu">
+        <div class="check-box">
+        <div class="cpu2-indgang-vaelg"></div>
+        <p class="intel-amd">i5 & RYZEN5</p>
+        <p class="undertekst">Som at være to afsted</p>
+        <p class="info-tekst">Typisk 4 kerner. <br>
+          Perfekt til større opgaver. Middel processor i serien.</p>
         <button class="vis-eks2">VIS EKSEMPEL</button>
-    </button>
-    <button class="i7-vaelg">
-      <div class="cpu3-indgang-vaelg"></div>
-      <p class="intel-amd">i3 & RYZEN3</p>
-      <p class="undertekst">En gruppe ude at handle</p>
-      <p class="info-tekst">Typisk 4 til 8 kerner. <br>
-        Perfekt til større opgaver. Største processor i serien.</p>
+        <button class="question"></button>
+        </div>
+      </label>
+
+
+      <br>
+
+      <label class="i7-vaelg">
+        <input type="radio" value="i7" v-model="cpu">
+        <div class="check-box">
+        <div class="cpu3-indgang-vaelg"></div>
+        <p class="intel-amd">i7 & RYZEN7</p>
+        <p class="undertekst">En gruppe ude at handle</p>
+        <p class="info-tekst">Typisk 4 til 8 kerner. <br>
+          Perfekt til større opgaver. Største processor i serien.</p>
         <button class="vis-eks3">VIS EKSEMPEL</button>
-    </button>
+        <button class="question"></button>
+        </div>
+      </label>
+
+      <div class="videre-tilbage">
+        <a href="processor.html"><button class="tilbage">TILBAGE</button></a>
+        <a href="harddisk.html"><button class="videre">VIDERE</button></a>
+      </div>
+
+    </div>
   </div>
 
-<div class="videre-tilbage">
-  <a href="processor.html"><button class="tilbage">Anullere</button></a>
-  <button class="videre">Videre</button>
-</div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
 
+  <script type="text/javascript">
+    /*
+		function updateSuggestion(){
+	  		localStorage.suggestion = "Processortype: " + localStorage.cpu
+	  	}
+*/
+
+    const Processortype = new Vue({
+      el: '#Processortype',
+      data: {
+        name: '',
+        cpu: '',
+        suggestion: 'N/A'
+      },
+
+      mounted() {
+
+        for (var i = 0; i < localStorage.length; i++) {
+          this[localStorage.key(i)] = localStorage.getItem(localStorage.key(i));
+        }
+
+      },
+      watch: {
+        name(newname) {
+          localStorage.name = newname;
+          //updateSuggestion()
+        },
+        cpu(newcpu) {
+          localStorage.cpu = newcpu;
+          //updateSuggestion()
+        },
+        i5(newi5) {
+          localStorage.i5 = newi5;
+          //updateSuggestion()
+        },
+        i7(newi7) {
+          localStorage.i7 = newi7;
+          //updateSuggestion()
+        },
+
+        /*
+				suggestion(newsuggestion){
+		    	localStorage.suggestion = newsuggestion;
+		    } */
+      }
+    });
+  </script>
   <script type="text/javascript" defer src="bilkascript.js"></script>
 </body>
 

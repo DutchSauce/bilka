@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta property="og:image" content="images/bilka-logo.png">
+  <link data-n-head="ssr" rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  <link rel="stylesheet" href="bilka-syle.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Bilka</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        <p class="menu">Menu</p>
+      </div>
+
+      </ul>
+      <div class="logo-ikon">
+        <img class="logo" src="images/bilka-logo.png" alt="Bilka logo">
+        <img class="search" src="images/icon-search.png" alt="Søg ikon til at søge efter bilkas varer">
+        <img class="heart" src="images/icon-heart.png" alt="Ønskeliste">
+        <img class="profil" src="images/icon-person.png" alt="Din bilka profil">
+        <img class="kurv" src="images/icon-cart.png" alt="Din indkøbskurv">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">work</a></li>
+        <li><a href="#">project</a></li>
+      </ul>
+    </nav>
+
+    <ul class="breadcrumb">
+      <li><a href="#">Forside</a></li>
+      <li><a href="#">Elektronik</a></li>
+      <li><a href="#">Computere</a></li>
+      <li>Bærbar Computer</li>
+    </ul>
+
+  </header>
+  <h3 class="b-guidetitel"><b>FIND DIN NYE PC</b></h3>
+  <h3 class="b-guideoverskrift">VÆLG GRAFIKKORT</h3>
+
+  <div id="grafiktype">
+    <br>
+    <div class="hdd-vaelg">
+
+
+        <label class="h128-vaelg">
+        <input type="radio" id="one" value="integreret" v-model="grafikkort">
+        <div class="check-box">
+        <div class="hdd-indgang-vaelg"></div>
+        <p class="intel-amd">INTEGRERET</p>
+        <p class="undertekst">Du vælger en lille kurv</p>
+        <p class="info-tekst">Filer gemt på computeren. Primær SSD Harddisk Type.<br>
+          Begrænset mulighed for stor mængde lagring af data.</p>
+        <button class="vis-eks">VIS EKSEMPEL</button>
+        <button class="question"></button>
+        </div>
+      </label>
+
+      <br>
+
+      <label class="h256-vaelg">
+        <input type="radio" id="two" value="dedikeret" v-model="grafikkort">
+        <div class="check-box">
+        <div class="hdd2-indgang-vaelg"></div>
+        <p class="intel-amd">DEDIKERET</p>
+        <p class="undertekst">Du vælger en indkøbskurv</p>
+        <p class="info-tekst">Filer gemt på computeren. Primær SSD Harddisk Type.<br>
+         Tilstrækkelig mulighed for stor mængde lagring af data.</p>
+        <button class="vis-eks2">VIS EKSEMPEL</button>
+        <button class="question"></button>
+        </div>
+      </label>
+
+
+      <div class="videre-tilbage">
+        <a href="grafikkort.html"><button class="tilbage">TILBAGE</button></a>
+        <a href="resultat.html"><button class="videre">VIS RESULTAT</button></a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+
+  <script type="text/javascript">
+    /*
+		function updateSuggestion(){
+	  		localStorage.suggestion = "Processortype: " + localStorage.cpu
+	  	}
+*/
+
+    const Processortype = new Vue({
+      el: '#grafiktype',
+      data: {
+        name: '',
+        grafikkort: '',
+        suggestion: 'N/A'
+      },
+
+      mounted() {
+
+        for (var i = 0; i < localStorage.length; i++) {
+          this[localStorage.key(i)] = localStorage.getItem(localStorage.key(i));
+        }
+
+      },
+      watch: {
+        name(newname) {
+          localStorage.name = newname;
+          //updateSuggestion()
+        },
+        grafikkort(newgrafikkort) {
+          localStorage.grafikkort = newgrafikkort;
+          //updateSuggestion()
+        },
+        integreret(newintegreret) {
+          localStorage.integreret = newintegreret;
+          //updateSuggestion()
+        },
+        dedikeret(newdedikeret) {
+          localStorage.dedikeret = newdedikeret;
+          //updateSuggestion()
+        },
+
+        /*
+				suggestion(newsuggestion){
+		    	localStorage.suggestion = newsuggestion;
+		    } */
+      }
+    });
+  </script>
+  <script type="text/javascript" defer src="bilkascript.js"></script>
+</body>
+
+</html>

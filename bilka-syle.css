@@ -469,10 +469,7 @@ h4 {
   color: #ffffff;
   background: #199FE3;
   padding-top: 20px;
-  margin-top: 50px;
-  margin-left: 61px;
-  margin-right: 25px;
-  margin-bottom: 20px;
+  margin: 50px 25px 20px 61px;
   box-shadow: 1px 3px 6px #888888; }
 
 /* GUIDE VEJLEDNING - guide-vejledning.html */
@@ -548,10 +545,16 @@ iframe {
 /* VÆLG PROCESSOR SIDE - vaelg-processor.html */
 .cpu-vaelg {
   display: flex;
+  background-color: lightgrey;
   flex-direction: column;
-  margin-left: 12px; }
+  width: 100%;
+  height: 820px;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .i3-vaelg {
+  position: relative;
   width: 351px;
   height: 226px;
   background-color: #ffffff;
@@ -559,16 +562,19 @@ iframe {
   border: none; }
 
 .cpu-indgang-vaelg {
+  position: absolute;
   width: 163px;
   height: 182px;
-  background-image: url("images/bilka-indgang-med-en-brain.png");
+  background-image: url("images/bilka-indgang-med-en-brain.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-top: 20px;
   margin-left: 10px;
   float: left; }
 
 .i5-vaelg {
+  position: relative;
   width: 351px;
   height: 226px;
   background-color: #ffffff;
@@ -576,45 +582,57 @@ iframe {
   border: none; }
 
 .cpu2-indgang-vaelg {
+  position: absolute;
   width: 163px;
   height: 182px;
-  background-image: url("images/brainz2.png");
+  background-image: url("images/brainz2.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-top: 20px;
   margin-left: 10px;
   float: left; }
 
 .i7-vaelg {
+  position: relative;
   width: 351px;
   height: 226px;
   background-color: #ffffff;
-  margin-top: 10px;
-  border: none; }
+  margin-top: 10px; }
 
 .cpu3-indgang-vaelg {
+  position: absolute;
   width: 163px;
   height: 182px;
-  background-image: url("images/brainz3.png");
+  background-image: url("images/brainz3.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-top: 20px;
   margin-left: 10px;
   float: left; }
 
 .intel-amd {
+  position: absolute;
+  top: 6%;
+  left: 55%;
   font-family: 'Heebo', sans-serif;
   font-size: 23px;
   font-weight: bold;
   color: #000000; }
 
 .undertekst {
+  position: absolute;
+  left: 55%;
+  top: 19%;
   font-family: 'Heebo', sans-serif;
   font-size: 13px;
   font-weight: bold;
   color: #000000; }
 
 .info-tekst {
+  position: absolute;
+  top: 35%;
   font-family: 'Segoe UI', sans-serif;
   font-size: 12px;
   font-weight: 300;
@@ -633,9 +651,10 @@ iframe {
   color: #ffffff;
   font-family: 'Heebo', sans-serif;
   font-weight: bold;
-  top: 46vh;
-  left: 60vw;
-  padding: 5px; }
+  top: 70%;
+  left: 51vw;
+  padding: 5px;
+  z-index: 500; }
 
 .vis-eks2 {
   position: absolute;
@@ -646,9 +665,11 @@ iframe {
   color: #ffffff;
   font-family: 'Heebo', sans-serif;
   font-weight: bold;
-  top: 75vh;
-  left: 60vw;
-  padding: 5px; }
+  padding: 5px;
+  top: 70%;
+  left: 51vw;
+  padding: 5px;
+  z-index: 500; }
 
 .vis-eks3 {
   position: absolute;
@@ -659,9 +680,48 @@ iframe {
   color: #ffffff;
   font-family: 'Heebo', sans-serif;
   font-weight: bold;
-  top: 104vh;
-  left: 60vw;
-  padding: 5px; }
+  left: 51vw;
+  padding: 5px;
+  top: 70%;
+  padding: 5px;
+  z-index: 500; }
+
+.question {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  shape-outside: circle();
+  clip-path: circle();
+  background-image: url();
+  top: 69%;
+  left: 79vw;
+  opacity: 40%;
+  background-color: #199FE3; }
+
+/* HIDE RADIO */
+[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0; }
+
+/* IMAGE STYLES */
+[type=radio] {
+  cursor: pointer; }
+
+.check-box {
+  position: relative;
+  width: 351px;
+  height: 226px;
+  background-color: #ffffff; }
+
+/* CHECKED STYLES */
+[type=radio]:checked + .check-box {
+  outline: 3px solid #1DC272;
+  background-image: url(images/check-mark.png);
+  background-position: right 0px top 0px;
+  background-repeat: no-repeat;
+  background-size: 40px; }
 
 .videre-tilbage {
   display: flex;
@@ -688,5 +748,154 @@ iframe {
   padding: 5px 30px;
   box-shadow: 1px 3px 6px #888888;
   margin-right: 60px; }
+
+/* HARDDISK SIDE - harddisk.html */
+.hdd-indgang {
+  width: 89%;
+  margin-left: 21px; }
+
+/* VÆLG HARDDISK SIDE - vaelg-harddisk.html */
+.hdd-vaelg {
+  display: flex;
+  background-color: lightgrey;
+  flex-direction: column;
+  width: 100%;
+  height: 820px;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.h128-vaelg {
+  position: relative;
+  width: 351px;
+  height: 226px;
+  background-color: #ffffff;
+  margin-top: 13px;
+  border: none; }
+
+.hdd-indgang-vaelg {
+  position: absolute;
+  width: 163px;
+  height: 182px;
+  background-image: url("images/indkoebsvogn1.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  margin-left: 10px;
+  float: left; }
+
+.h256-vaelg {
+  position: relative;
+  width: 351px;
+  height: 226px;
+  background-color: #ffffff;
+  margin-top: 10px;
+  border: none; }
+
+.hdd2-indgang-vaelg {
+  position: absolute;
+  width: 163px;
+  height: 182px;
+  background-image: url("images/indkoebsvogn2.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  margin-left: 10px;
+  float: left; }
+
+.h512-vaelg {
+  position: relative;
+  width: 351px;
+  height: 226px;
+  background-color: #ffffff;
+  margin-top: 10px; }
+
+.hdd3-indgang-vaelg {
+  position: absolute;
+  width: 163px;
+  height: 182px;
+  background-image: url("images/indkoebsvognsamlet.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  margin-left: 10px;
+  float: left; }
+
+/* RAM SIDE - ram.html */
+/* VÆLG RAM SIDE - vaelg-ram.html */
+.ram-vaelg {
+  display: flex;
+  background-color: lightgrey;
+  flex-direction: column;
+  width: 100%;
+  height: 820px;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.r4-vaelg {
+  position: relative;
+  width: 351px;
+  height: 226px;
+  background-color: #ffffff;
+  margin-top: 13px;
+  border: none; }
+
+.ram-indgang-vaelg {
+  position: absolute;
+  width: 163px;
+  height: 182px;
+  background-image: url("images/bilkareol.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  margin-left: 10px;
+  float: left; }
+
+.r8-vaelg {
+  position: relative;
+  width: 351px;
+  height: 226px;
+  background-color: #ffffff;
+  margin-top: 10px;
+  border: none; }
+
+.ram2-indgang-vaelg {
+  position: absolute;
+  width: 163px;
+  height: 182px;
+  background-image: url("images/bilkareolny2.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  margin-left: 10px;
+  float: left; }
+
+.r16-vaelg {
+  position: relative;
+  width: 351px;
+  height: 226px;
+  background-color: #ffffff;
+  margin-top: 10px; }
+
+.ram3-indgang-vaelg {
+  position: absolute;
+  width: 163px;
+  height: 182px;
+  background-image: url("images/bilkareol-3.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  margin-left: 10px;
+  float: left; }
+
+/* GRAFIKKORT SIDE - ram.html */
+/* VÆLG GRAIKKORT SIDE - vaelg-grafikkort.html */
 
 /*# sourceMappingURL=bilka-syle.css.map */
