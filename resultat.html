@@ -46,14 +46,36 @@
     </ul>
 
   </header>
+  <div class="luk-tab">
+    <a href="bilka-guide.html">&times;</a>
+  </div>
+
   <h3 class="b-guidetitel">DETTE PASSER TIL DIG</h3>
   <h3 class="b-guideoverskrift">RESULTAT AF GUIDE</h3>
+
   <p class="b-guidetext">Du valgte disse specifikationer, som passer bedst til dine behov. Din processor kan klare det meste, især med 8GB RAM som håndterer de fleste opgaver. Med en stabil mængde lagring og SSD, har du opnået en computer til basal forbrug, som kan mange opgaver.</p>
-  <div id="harddisktype">
+  <div id="harddisktype2">
   <span>{{retext}}</span>
     <span class="span-resultat">{{cpu}} · {{harddisk}} · {{ram}} · {{grafikkort}} </span>
-
   </div>
+
+<div class="res-undertext">
+  <p class="res-text1">Følgende bærbare computere passer på kravene</p>
+  <p class="res-text2">(Resultat sorteres efter mest populære modeller)</p>
+</div>
+
+  <div class="computere">
+    <div class="pc1">
+
+    </div>
+    <div class="pc2">
+
+    </div>
+  </div>
+
+<div class="flere">
+  <div class="flere-btn">VIS FLERE</div>
+</div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
@@ -66,7 +88,7 @@
 */
 
     const Processortype = new Vue({
-      el: '#harddisktype',
+      el: '#harddisktype2',
       data: {
         name: '',
         retext: '',
