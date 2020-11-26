@@ -22,8 +22,8 @@
       </div>
 
       </ul>
+      <img class="logo" src="images/bilka-logo.png" alt="Bilka logo">
       <div class="logo-ikon">
-        <img class="logo" src="images/bilka-logo.png" alt="Bilka logo">
         <img class="search" src="images/icon-search.png" alt="Søg ikon til at søge efter bilkas varer">
         <img class="heart" src="images/icon-heart.png" alt="Ønskeliste">
         <img class="profil" src="images/icon-person.png" alt="Din bilka profil">
@@ -45,22 +45,21 @@
     </ul>
 
   </header>
-  <h3 class="b-guidetitel"><b>FIND DIN NYE PC</b></h3>
-  <h3 class="b-guideoverskrift">VÆLG GRAFIKKORT</h3>
+  <h3 class="b-guidetitel"><b>HVILKEN PASSER DIG?</b></h3>
+  <h3 class="b-guideoverskrift">GRAFIKKORT (GPU)</h3>
 
   <div id="grafiktype">
-    <br>
-    <div class="hdd-vaelg">
+    <div class="gra-vaelg">
 
 
-        <label class="h128-vaelg">
-        <input type="radio" id="one" value="integreret" v-model="grafikkort">
+        <label class="inte-vaelg">
+        <input type="radio" id="one" value="Integreret GPU" v-model="grafikkort">
         <div class="check-box">
-        <div class="hdd-indgang-vaelg"></div>
+        <div class="inte-indgang-vaelg"></div>
         <p class="intel-amd">INTEGRERET</p>
-        <p class="undertekst">Du vælger en lille kurv</p>
-        <p class="info-tekst">Filer gemt på computeren. Primær SSD Harddisk Type.<br>
-          Begrænset mulighed for stor mængde lagring af data.</p>
+        <p class="undertekst">Normal aflæsning</p>
+        <p class="info-tekst">Basal grafikhåndtering. Indbygget i bundkortet.
+          Lavere strømforbrug.</p>
         <button class="vis-eks">VIS EKSEMPEL</button>
         <button class="question"></button>
         </div>
@@ -68,23 +67,23 @@
 
       <br>
 
-      <label class="h256-vaelg">
-        <input type="radio" id="two" value="dedikeret" v-model="grafikkort">
+      <label class="dedi-vaelg">
+        <input type="radio" id="two" value="Dedikeret GPU" v-model="grafikkort">
         <div class="check-box">
-        <div class="hdd2-indgang-vaelg"></div>
+        <div class="dedi-indgang-vaelg"></div>
         <p class="intel-amd">DEDIKERET</p>
-        <p class="undertekst">Du vælger en indkøbskurv</p>
-        <p class="info-tekst">Filer gemt på computeren. Primær SSD Harddisk Type.<br>
-         Tilstrækkelig mulighed for stor mængde lagring af data.</p>
+        <p class="undertekst">Forbedredt aflæsning</p>
+        <p class="info-tekst">Kompleks grafikhåndtering. Komponent for sig selv.
+           Højere strømforbrug.</p>
         <button class="vis-eks2">VIS EKSEMPEL</button>
         <button class="question"></button>
         </div>
       </label>
 
 
-      <div class="videre-tilbage">
-        <a href="grafikkort.html"><button class="tilbage">TILBAGE</button></a>
-        <a href="resultat.html"><button class="videre">VIS RESULTAT</button></a>
+      <div class="videre-tilbage-gra">
+        <a href="grafikkort.html"><button class="tilbage-gra">TILBAGE</button></a>
+        <a href="resultat.html"><button class="vis-resultat">RESULTAT</button></a>
       </div>
 
     </div>

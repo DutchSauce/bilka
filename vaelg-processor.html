@@ -22,8 +22,9 @@
       </div>
 
       </ul>
+      <img class="logo" src="images/bilka-logo.png" alt="Bilka logo">
+
       <div class="logo-ikon">
-        <img class="logo" src="images/bilka-logo.png" alt="Bilka logo">
         <img class="search" src="images/icon-search.png" alt="Søg ikon til at søge efter bilkas varer">
         <img class="heart" src="images/icon-heart.png" alt="Ønskeliste">
         <img class="profil" src="images/icon-person.png" alt="Din bilka profil">
@@ -41,7 +42,8 @@
       <li><a href="#">Forside</a></li>
       <li><a href="#">Elektronik</a></li>
       <li><a href="#">Computere</a></li>
-      <li>Bærbar Computer</li>
+      <li><a href="#">Bærbar Computer</a></li>
+      <li>Bilka Guide</li>
     </ul>
 
   </header>
@@ -49,7 +51,6 @@
   <h3 class="b-guideoverskrift">VÆLG PROCESSOR</h3>
 
   <div id="Processortype">
-    <br>
     <div class="cpu-vaelg">
 
 
@@ -85,7 +86,7 @@
       <br>
 
       <label class="i7-vaelg">
-        <input type="radio" value="i7" v-model="cpu">
+        <input type="radio" value=i7 v-model="cpu">
         <div class="check-box">
         <div class="cpu3-indgang-vaelg"></div>
         <p class="intel-amd">i7 & RYZEN7</p>
@@ -103,12 +104,23 @@
       </div>
 
     </div>
+    <!-- Modal HTML embedded directly into document -->
+    <div id="ex1" class="modal">
+      <p>Thanks for clicking. That felt good.</p>
+      <a href="#" rel="modal:close">Close</a>
+    </div>
+
+    <!-- Link to open the modal -->
+    <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <script type="text/javascript">
+
     /*
 		function updateSuggestion(){
 	  		localStorage.suggestion = "Processortype: " + localStorage.cpu
@@ -147,6 +159,8 @@
           localStorage.i7 = newi7;
           //updateSuggestion()
         },
+
+
 
         /*
 				suggestion(newsuggestion){

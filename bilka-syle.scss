@@ -22,7 +22,7 @@ nav {
   font-family: 'Segoe UI', sans-serif;
 }
 
-.logo logo {
+.logo{
   margin-bottom: 10px;
   width: 18%;
 }
@@ -88,34 +88,49 @@ nav {
 
   header {
     width: 100%;
-    height: 140px;
+    height: 120px;
     background-color: #ffffff;
     overflow-x: hidden;
   }
 
-  .logo-ikon .logo {
+  .logo-ikon{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo-link{
+    display: block;
+  }
+
+  .logo {
+    margin-top: 10px;
     margin-bottom: 10px;
-    width: 18%;
+    width: 25%;
+    margin-right: 25px;
+  }
+
+  .logo-ikon{
+    margin-top: 10px;
   }
 
   .logo-ikon .search {
-    width: 8%;
-    margin-left: 20px;
+    width: 15%;
+    margin-right: 15px;
   }
 
   .logo-ikon .heart {
-    width: 8%;
-    margin-left: 20px;
+    width: 15%;
+    margin-right: 15px;
   }
 
   .logo-ikon .profil {
-    width: 8%;
-    margin-left: 20px;
+    width: 15%;
+    margin-right: 15px;
   }
 
   .logo-ikon .kurv {
-    width: 8%;
-    margin-left: 20px;
+    width: 15%;
+    margin-right: 15px;
   }
 
   .breadcrumb {
@@ -167,10 +182,12 @@ nav {
 
   .burger {
     display: block;
+    margin-left: 10px;
     margin-right: 15px;
     padding-right: 50px;
     border: 5px;
-    border-color: $bilkacolor;
+    outline: 3px solid $bilkacolor;
+    height: 28px;
   }
 
   .menu {
@@ -336,10 +353,6 @@ nav {
   margin-top: 20px;
   box-shadow: 1px 3px 6px #888888;
 }
-
-a {
-  display: block;
-}
 /* PC Teknik guide sider - pc-overblik.html */
 h2 {
   font-family: 'Heebo', sans-serif;
@@ -499,17 +512,28 @@ h4 {
   margin-right: 20px;
 }
 /* Bilka Guide side - bilka-guide.html */
+
+.bilkaguide-container {
+  background-color: $backcolor;
+  width: 100%;
+  height: 680px;
+}
+
+main{
+  background-color: $backcolor;
+}
+
 .b-guidetitel {
   font-family: 'Heebo', sans-serif;
   font-size: 23px;
-  margin-left: 21px;
+  padding: 10px 20px 0px 20px;
 }
 
 .b-guideoverskrift {
   font-family: 'Heebo', sans-serif;
   font-weight: 300;
-  font-size: 23px;
-  margin-left: 21px;
+  font-size: 20px;
+  padding: 0px 20px 15px 20px;
 }
 
 .b-guidetext {
@@ -517,21 +541,16 @@ h4 {
   color: #5E6C7C;
   line-height: 2.5vh;
   font-size: 17px;
-  margin-left: 21px;
-  margin-right: 21px;
+  padding: 0px 20px 0px 20px;
 }
 
-.illustrationer {
-  box-sizing: border-box;
-  margin-top: 30px;
-  margin-left: 21px;
-  margin-right: 21px;
-}
 
-.illustrationer img {
-  width: 24%;
-  box-sizing: border-box;
-  padding: 5px;
+.videre-container {
+  display: inline-flex;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  top: 83%;
 }
 
 .startguide {
@@ -540,24 +559,38 @@ h4 {
   font-family: 'Heebo', sans-serif;
   font-size: 20px;
   text-align: center;
+  padding-top: 20px;
   color: #ffffff;
   background: $bilkacolor;
-  padding-top: 20px;
-  margin: 50px 25px 20px 61px;
   box-shadow: 1px 3px 6px #888888;
 }
+
+.textcent {
+  text-align: center;
+  font-family: 'Heebo', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.guide-videre{
+  display: block;
+  width: 254px;
+  height: 65px;
+}
+
+
 /* GUIDE VEJLEDNING - guide-vejledning.html */
-.grå-blok {
+.graa-blok {
   background-color: $backcolor;
   width: 25px;
-  height: 560px;
+  height: 520px;
   position: absolute;
-  left: 86%;
+  left: 83%;
   z-index: 500;
 }
 
 .gif {
-  width: 80%;
+  width: 70%;
   height: 0;
   padding-bottom: 140%;
   position: relative;
@@ -602,11 +635,12 @@ iframe {
 
 .forestil {
   font-family: 'Segoe UI', sans-serif;
-  color: #000000;
+  color: #5E6C7C;
   line-height: 2.5vh;
   font-size: 17px;
   margin-left: 21px;
   margin-right: 21px;
+  padding-top: 10px;
 }
 
 .vaelg {
@@ -624,24 +658,27 @@ iframe {
   box-shadow: 1px 3px 6px #888888;
 }
 /* VÆLG PROCESSOR SIDE - vaelg-processor.html */
+#Processortype{
+  height: 820px;
+}
+
 .cpu-vaelg {
   display: flex;
-  background-color: lightgrey;
+  background-color: $backcolor;
   flex-direction: column;
   width: 100%;
   height: 820px;
   position: relative;
-  padding-left: 10px;
-  padding-right: 10px;
+  align-items: center;
 }
 
 .i3-vaelg {
-  position: relative;
+
   width: 351px;
   height: 226px;
   background-color: #ffffff;
-  margin-top: 13px;
   border: none;
+  box-shadow: 1px 3px 6px #888888;
 }
 
 .cpu-indgang-vaelg {
@@ -658,12 +695,12 @@ iframe {
 }
 
 .i5-vaelg {
-  position: relative;
+
   width: 351px;
   height: 226px;
   background-color: #ffffff;
-  margin-top: 10px;
   border: none;
+  box-shadow: 1px 3px 6px #888888;
 }
 
 .cpu2-indgang-vaelg {
@@ -680,11 +717,11 @@ iframe {
 }
 
 .i7-vaelg {
-  position: relative;
+
   width: 351px;
   height: 226px;
   background-color: #ffffff;
-  margin-top: 10px;
+  box-shadow: 1px 3px 6px #888888;
 }
 
 .cpu3-indgang-vaelg {
@@ -823,33 +860,35 @@ iframe {
 
 
 .videre-tilbage {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  display: inline-flex;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  top: 93%;
 }
 
 .tilbage {
   border: none;
   background-color: #ffffff;
   font-family: 'Heebo', sans-serif;
+  color: $bilkacolor;
   font-weight: bold;
   padding: 5px 30px;
   box-shadow: 1px 3px 6px #888888;
-  margin-left: 60px;
+  margin-right: 5px;
 }
 
 .videre {
   border: none;
-  background-color: #ffffff;
+  background-color: $bilkacolor;
   font-family: 'Heebo', sans-serif;
   font-weight: bold;
-  color: $bilkacolor;
+  color: #ffffff;
   padding: 5px 30px;
   box-shadow: 1px 3px 6px #888888;
-  margin-right: 60px;
+  margin-left: 5px;
 }
+
 
 /* HARDDISK SIDE - harddisk.html */
 
@@ -861,24 +900,28 @@ iframe {
 
 
 /* VÆLG HARDDISK SIDE - vaelg-harddisk.html */
+
+#harddisktype{
+  height: 820px;
+}
+
 .hdd-vaelg {
   display: flex;
-  background-color: lightgrey;
+  background-color: $backcolor;
   flex-direction: column;
   width: 100%;
   height: 820px;
   position: relative;
-  padding-left: 10px;
-  padding-right: 10px;
+  align-items: center;
 }
 
 .h128-vaelg {
-  position: relative;
   width: 351px;
   height: 226px;
   background-color: #ffffff;
-  margin-top: 13px;
   border: none;
+  box-shadow: 1px 3px 6px #888888;
+
 }
 
 .hdd-indgang-vaelg {
@@ -895,12 +938,12 @@ iframe {
 }
 
 .h256-vaelg {
-  position: relative;
   width: 351px;
   height: 226px;
   background-color: #ffffff;
-  margin-top: 10px;
   border: none;
+  box-shadow: 1px 3px 6px #888888;
+
 }
 
 .hdd2-indgang-vaelg {
@@ -917,11 +960,11 @@ iframe {
 }
 
 .h512-vaelg {
-  position: relative;
   width: 351px;
   height: 226px;
   background-color: #ffffff;
-  margin-top: 10px;
+  box-shadow: 1px 3px 6px #888888;
+
 }
 
 .hdd3-indgang-vaelg {
@@ -942,49 +985,30 @@ iframe {
 
 
 /* VÆLG RAM SIDE - vaelg-ram.html */
+
+#ramtype{
+  height: 820px;
+}
+
 .ram-vaelg {
   display: flex;
-  background-color: lightgrey;
+  background-color: $backcolor;
   flex-direction: column;
   width: 100%;
   height: 820px;
   position: relative;
-  padding-left: 10px;
-  padding-right: 10px;
+  align-items: center;
 }
 
 .r4-vaelg {
-  position: relative;
   width: 351px;
   height: 226px;
   background-color: #ffffff;
-  margin-top: 13px;
   border: none;
+  box-shadow: 1px 3px 6px #888888;
 }
 
 .ram-indgang-vaelg {
-  position: absolute;
-  width: 163px;
-  height: 182px;
-  background-image: url("images/bilkareol.gif");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-top: 20px;
-  margin-left: 10px;
-  float: left;
-}
-
-.r8-vaelg {
-  position: relative;
-  width: 351px;
-  height: 226px;
-  background-color: #ffffff;
-  margin-top: 10px;
-  border: none;
-}
-
-.ram2-indgang-vaelg {
   position: absolute;
   width: 163px;
   height: 182px;
@@ -997,12 +1021,33 @@ iframe {
   float: left;
 }
 
-.r16-vaelg {
-  position: relative;
+.r8-vaelg {
   width: 351px;
   height: 226px;
   background-color: #ffffff;
-  margin-top: 10px;
+  border: none;
+  box-shadow: 1px 3px 6px #888888;
+}
+
+.ram2-indgang-vaelg {
+  position: absolute;
+  width: 163px;
+  height: 182px;
+  background-image: url("images/bilkareol-2.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  margin-left: 10px;
+  float: left;
+}
+
+.r16-vaelg {
+  width: 351px;
+  height: 226px;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 1px 3px 6px #888888;
 }
 
 .ram3-indgang-vaelg {
@@ -1025,3 +1070,101 @@ iframe {
 
 
 /* VÆLG GRAIKKORT SIDE - vaelg-grafikkort.html */
+.gra-vaelg {
+  display: flex;
+  background-color: $backcolor;
+  flex-direction: column;
+  width: 100%;
+  height: 820px;
+  position: relative;
+  align-items: center;
+}
+
+.inte-vaelg {
+  position: relative;
+  width: 351px;
+  height: 226px;
+  background-color: #ffffff;
+  margin-top: 13px;
+  border: none;
+  box-shadow: 1px 3px 6px #888888;
+}
+
+.inte-indgang-vaelg {
+  position: absolute;
+  width: 163px;
+  height: 182px;
+  background-image: url("images/pasta-integreret.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  margin-left: 10px;
+  float: left;
+}
+
+.dedi-vaelg {
+  position: relative;
+  width: 351px;
+  height: 226px;
+  background-color: #ffffff;
+  margin-top: 10px;
+  border: none;
+  box-shadow: 1px 3px 6px #888888;
+}
+
+.dedi-indgang-vaelg {
+  position: absolute;
+  width: 163px;
+  height: 182px;
+  background-image: url("images/pasta-dedikeret.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  margin-left: 10px;
+  float: left;
+}
+
+.videre-tilbage-gra {
+  display: inline-flex;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  top: 65%;
+}
+
+.tilbage-gra {
+  border: none;
+  background-color: #ffffff;
+  font-family: 'Heebo', sans-serif;
+  color: $bilkacolor;
+  font-weight: bold;
+  padding: 5px 30px;
+  box-shadow: 1px 3px 6px #888888;
+  margin-right: 5px;
+}
+
+.vis-resultat {
+  border: none;
+  background-color: $bilkacolor;
+  font-family: 'Heebo', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 5px 0px;
+  box-shadow: 1px 3px 6px #888888;
+  margin-left: 5px;
+}
+
+/* RESULTAT SIDE - resultat.html */
+
+.span-resultat{
+  font-size: 20px;
+  font-family: 'Heebo', sans-serif;
+  outline: 1px solid #000000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  background-color: #ffffff;
+}
