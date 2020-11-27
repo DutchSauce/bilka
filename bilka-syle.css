@@ -151,8 +151,8 @@ nav {
   .burger {
     display: block;
     margin-left: 10px;
-    margin-right: 0px;
-    padding-right: 0px;
+    margin-right: 0;
+    padding-right: 0;
     border: 5px;
     outline: none;
     height: 28px; }
@@ -454,20 +454,20 @@ main {
 .b-guidetitel {
   font-family: 'Heebo', sans-serif;
   font-size: 23px;
-  padding: 10px 20px 0px 20px; }
+  padding: 10px 20px 0; }
 
 .b-guideoverskrift {
   font-family: 'Heebo', sans-serif;
   font-weight: 300;
   font-size: 20px;
-  padding: 0px 20px 15px 20px; }
+  padding: 0 20px 15px; }
 
 .b-guidetext {
   font-family: 'Segoe UI', sans-serif;
   color: #5E6C7C;
   line-height: 2.5vh;
   font-size: 17px;
-  padding: 0px 20px 0px 20px; }
+  padding: 0 20px; }
 
 .videre-container {
   display: inline-flex;
@@ -679,8 +679,7 @@ iframe {
   font-weight: bold;
   top: 70%;
   left: 51vw;
-  padding: 5px;
-  z-index: 500; }
+  padding: 5px; }
 
 .vis-eks2 {
   position: absolute;
@@ -694,8 +693,7 @@ iframe {
   padding: 5px;
   top: 70%;
   left: 51vw;
-  padding: 5px;
-  z-index: 500; }
+  padding: 5px; }
 
 .vis-eks3 {
   position: absolute;
@@ -709,8 +707,103 @@ iframe {
   left: 51vw;
   padding: 5px;
   top: 70%;
-  padding: 5px;
-  z-index: 500; }
+  padding: 5px; }
+
+.modal {
+  z-index: 15;
+  height: 611px;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+  background: #F3F3F3 !important;
+  padding: 15px 10px 0 10px !important; }
+
+.close-modal {
+  background-image: url("images/close-modal.png") !important; }
+
+.eksempel {
+  color: white; }
+
+.visex-title {
+  font-family: 'Heebo', sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+  text-align: center; }
+
+.visex-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 12.75pt;
+  text-align: center;
+  line-height: 2.5vh; }
+
+.vis-infotext {
+  font-size: 13px;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 400; }
+
+.vis-overskrift {
+  text-align: center;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+  font-size: 20px; }
+
+.forbrug {
+  display: flex;
+  flex-direction: flex-wrap;
+  justify-content: center; }
+
+.vis-word {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px; }
+
+.faner {
+  width: 40px;
+  height: 27px;
+  border-radius: 8px;
+  border: 0.5px solid #000000;
+  font-size: 10px;
+  font-family: 'Heebo', sans-serif;
+  text-align: center;
+  position: absolute;
+  background: #ffffff;
+  left: 65%; }
+
+.vis-img1 {
+  height: 60px;
+  width: 90px;
+  background-image: url("images/word_logo.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 15px; }
+
+.vis-img2 {
+  height: 60px;
+  width: 90px;
+  background-image: url("images/Google_Chrome_icon.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 15px; }
+
+.vis-chrome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Heebo', sans-serif;
+  font-size: 20px;
+  font-weight: 400; }
+
+.vis-program {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  font-family: 'Heebo', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #5E6C7C; }
 
 .question {
   width: 32px;
@@ -718,11 +811,17 @@ iframe {
   position: absolute;
   shape-outside: circle();
   clip-path: circle();
-  background-image: url();
+  background-image: url("images/q-mark.png");
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: center;
   top: 69%;
   left: 79vw;
   opacity: 40%;
   background-color: #199FE3; }
+
+.q-mark {
+  opacity: 0; }
 
 /* HIDE RADIO */
 [type=radio] {
@@ -744,8 +843,8 @@ iframe {
 /* CHECKED STYLES */
 [type=radio]:checked + .check-box {
   outline: 3px solid #1DC272;
-  background-image: url(images/check-mark.png);
-  background-position: right 0px top 0px;
+  background-image: url("images/check-mark.png");
+  background-position: right 0 top 0;
   background-repeat: no-repeat;
   background-size: 40px; }
 
@@ -997,7 +1096,7 @@ iframe {
   font-family: 'Heebo', sans-serif;
   font-weight: bold;
   color: #ffffff;
-  padding: 5px 0px;
+  padding: 5px 0;
   box-shadow: 1px 3px 6px #888888;
   margin-left: 5px; }
 
@@ -1022,7 +1121,7 @@ iframe {
   background-color: #ffffff; }
 
 .res-undertext {
-  margin: 20px 0 20px 0;
+  margin: 20px 0;
   text-align: center;
   font-size: 17px; }
 

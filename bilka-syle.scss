@@ -22,7 +22,7 @@ nav {
   font-family: 'Segoe UI', sans-serif;
 }
 
-.logo{
+.logo {
   margin-bottom: 10px;
   width: 18%;
 }
@@ -94,12 +94,12 @@ nav {
     overflow-x: hidden;
   }
 
-  .logo-ikon{
+  .logo-ikon {
     display: flex;
     flex-direction: row;
   }
 
-  .logo-link{
+  .logo-link {
     display: block;
   }
 
@@ -110,7 +110,7 @@ nav {
     margin-right: 15px;
   }
 
-  .logo-ikon{
+  .logo-ikon {
     margin-top: 10px;
   }
 
@@ -184,8 +184,8 @@ nav {
   .burger {
     display: block;
     margin-left: 10px;
-    margin-right: 0px;
-    padding-right: 0px;
+    margin-right: 0;
+    padding-right: 0;
     border: 5px;
     outline: none;
     height: 28px;
@@ -514,28 +514,27 @@ h4 {
   margin-right: 20px;
 }
 /* Bilka Guide side - bilka-guide.html */
-
 .bilkaguide-container {
   background-color: $backcolor;
   width: 100%;
   height: 680px;
 }
 
-main{
+main {
   background-color: $backcolor;
 }
 
 .b-guidetitel {
   font-family: 'Heebo', sans-serif;
   font-size: 23px;
-  padding: 10px 20px 0px 20px;
+  padding: 10px 20px 0;
 }
 
 .b-guideoverskrift {
   font-family: 'Heebo', sans-serif;
   font-weight: 300;
   font-size: 20px;
-  padding: 0px 20px 15px 20px;
+  padding: 0 20px 15px;
 }
 
 .b-guidetext {
@@ -543,9 +542,8 @@ main{
   color: #5E6C7C;
   line-height: 2.5vh;
   font-size: 17px;
-  padding: 0px 20px 0px 20px;
+  padding: 0 20px;
 }
-
 
 .videre-container {
   display: inline-flex;
@@ -574,13 +572,11 @@ main{
   font-weight: 600;
 }
 
-.guide-videre{
+.guide-videre {
   display: block;
   width: 254px;
   height: 65px;
 }
-
-
 /* GUIDE VEJLEDNING - guide-vejledning.html */
 .graa-blok {
   background-color: $backcolor;
@@ -660,7 +656,7 @@ iframe {
   box-shadow: 1px 3px 6px #888888;
 }
 /* VÆLG PROCESSOR SIDE - vaelg-processor.html */
-#Processortype{
+#Processortype {
   height: 820px;
 }
 
@@ -675,7 +671,6 @@ iframe {
 }
 
 .i3-vaelg {
-
   width: 351px;
   height: 226px;
   background-color: #ffffff;
@@ -697,7 +692,6 @@ iframe {
 }
 
 .i5-vaelg {
-
   width: 351px;
   height: 226px;
   background-color: #ffffff;
@@ -719,7 +713,6 @@ iframe {
 }
 
 .i7-vaelg {
-
   width: 351px;
   height: 226px;
   background-color: #ffffff;
@@ -784,7 +777,6 @@ iframe {
   top: 70%;
   left: 51vw;
   padding: 5px;
-  z-index: 500;
 }
 
 .vis-eks2 {
@@ -800,7 +792,6 @@ iframe {
   top: 70%;
   left: 51vw;
   padding: 5px;
-  z-index: 500;
 }
 
 .vis-eks3 {
@@ -816,8 +807,125 @@ iframe {
   padding: 5px;
   top: 70%;
   padding: 5px;
-  z-index: 500;
 }
+
+.modal {
+  z-index: 15;
+  height: 611px;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+  background: $backcolor !important;
+  padding: 15px 10px 0 10px !important;
+}
+
+.close-modal {
+  background-image: url("images/close-modal.png") !important;
+}
+
+.eksempel {
+  color: white;
+}
+
+.visex-title {
+  font-family: 'Heebo', sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.visex-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 12.75pt;
+  text-align: center;
+  line-height: 2.5vh;
+}
+
+.vis-infotext {
+  font-size: 13px;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 400;
+}
+
+.vis-overskrift {
+  text-align: center;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.forbrug {
+  display: flex;
+  flex-direction: flex-wrap;
+  justify-content: center;
+}
+
+.vis-word {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.faner {
+  width: 40px;
+  height: 27px;
+  border-radius: 8px;
+  border: 0.5px solid #000000;
+  font-size: 10px;
+  font-family: 'Heebo', sans-serif;
+  text-align: center;
+  position: absolute;
+  background: #ffffff;
+  left: 65%;
+}
+
+.vis-img1 {
+  height: 60px;
+  width: 90px;
+  background-image: url("images/word_logo.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 15px;
+}
+
+.vis-img2 {
+  height: 60px;
+  width: 90px;
+  background-image: url("images/Google_Chrome_icon.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 15px;
+}
+
+.vis-chrome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Heebo', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.vis-gb1 {}
+
+.vis-gb2 {}
+
+.vis-program {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  font-family: 'Heebo', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #5E6C7C;
+}
+
+.vis-program1 {}
+
+.vis-program2 {}
 
 .question {
   width: 32px;
@@ -825,41 +933,45 @@ iframe {
   position: absolute;
   shape-outside: circle();
   clip-path: circle();
-  background-image: url();
+  background-image: url("images/q-mark.png");
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: center;
   top: 69%;
   left: 79vw;
   opacity: 40%;
   background-color: $bilkacolor;
 }
+
+.q-mark {
+  opacity: 0;
+}
 /* HIDE RADIO */
 [type=radio] {
   position: absolute;
   opacity: 0;
-  width:0;
-  height:0;
+  width: 0;
+  height: 0;
 }
 /* IMAGE STYLES */
 [type=radio] {
   cursor: pointer;
 }
 
-.check-box{
+.check-box {
   position: relative;
   width: 351px;
   height: 226px;
   background-color: #ffffff;
 }
-
 /* CHECKED STYLES */
 [type=radio]:checked+.check-box {
   outline: 3px solid #1DC272;
-  background-image: url(images/check-mark.png);
-  background-position: right 0px top 0px;;
+  background-image: url("images/check-mark.png");
+  background-position: right 0 top 0;
   background-repeat: no-repeat;
   background-size: 40px;
-  }
-
-
+}
 
 .videre-tilbage {
   display: inline-flex;
@@ -890,20 +1002,13 @@ iframe {
   box-shadow: 1px 3px 6px #888888;
   margin-left: 5px;
 }
-
-
 /* HARDDISK SIDE - harddisk.html */
-
 .hdd-indgang {
   width: 89%;
   margin-left: 21px;
 }
-
-
-
 /* VÆLG HARDDISK SIDE - vaelg-harddisk.html */
-
-#harddisktype{
+#harddisktype {
   height: 820px;
 }
 
@@ -923,7 +1028,6 @@ iframe {
   background-color: #ffffff;
   border: none;
   box-shadow: 1px 3px 6px #888888;
-
 }
 
 .hdd-indgang-vaelg {
@@ -945,7 +1049,6 @@ iframe {
   background-color: #ffffff;
   border: none;
   box-shadow: 1px 3px 6px #888888;
-
 }
 
 .hdd2-indgang-vaelg {
@@ -966,7 +1069,6 @@ iframe {
   height: 226px;
   background-color: #ffffff;
   box-shadow: 1px 3px 6px #888888;
-
 }
 
 .hdd3-indgang-vaelg {
@@ -981,14 +1083,9 @@ iframe {
   margin-left: 10px;
   float: left;
 }
-
 /* RAM SIDE - ram.html */
-
-
-
 /* VÆLG RAM SIDE - vaelg-ram.html */
-
-#ramtype{
+#ramtype {
   height: 820px;
 }
 
@@ -1064,13 +1161,7 @@ iframe {
   margin-left: 10px;
   float: left;
 }
-
-
-
 /* GRAFIKKORT SIDE - ram.html */
-
-
-
 /* VÆLG GRAIKKORT SIDE - vaelg-grafikkort.html */
 .gra-vaelg {
   display: flex;
@@ -1153,13 +1244,12 @@ iframe {
   font-family: 'Heebo', sans-serif;
   font-weight: bold;
   color: #ffffff;
-  padding: 5px 0px;
+  padding: 5px 0;
   box-shadow: 1px 3px 6px #888888;
   margin-left: 5px;
 }
-
 /* RESULTAT SIDE - resultat.html */
-#harddisktype2{
+#harddisktype2 {
   display: flex;
   background-color: $backcolor;
   flex-direction: column;
@@ -1169,9 +1259,7 @@ iframe {
   align-items: center;
 }
 
-
-
-.span-resultat{
+.span-resultat {
   font-size: 20px;
   font-family: 'Heebo', sans-serif;
   outline: 1px solid #000000;
@@ -1182,29 +1270,28 @@ iframe {
   background-color: #ffffff;
 }
 
-.res-undertext{
-  margin: 20px 0 20px 0;
+.res-undertext {
+  margin: 20px 0;
   text-align: center;
   font-size: 17px;
 }
 
-.res-text1{
+.res-text1 {
   font-family: 'Segoe UI', sans-serif;
 }
 
-.res-text2{
+.res-text2 {
   font-family: 'Heebo', sans-serif;
   font-weight: 200;
 }
 
-.computere{
+.computere {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-.pc1{
+.pc1 {
   width: 351px;
   height: 226px;
   background-color: #ffffff;
@@ -1212,7 +1299,7 @@ iframe {
   margin-bottom: 5px;
 }
 
-.pc2{
+.pc2 {
   width: 351px;
   height: 226px;
   background-color: #ffffff;
@@ -1220,14 +1307,13 @@ iframe {
   margin-top: 5px;
 }
 
-
-.flere{
+.flere {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.flere-btn{
+.flere-btn {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
