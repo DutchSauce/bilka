@@ -66,7 +66,30 @@
 
   <div class="computere">
     <div class="pc1">
-      <?php  ?>
+      <?php
+
+      /*foreach($dbh->query('SELECT * from bilkarigs') as $row) {
+          print_r($row);
+
+          var_dump($_GET);
+          $selected = $_GET["data"];
+          $selected = base64_decode($selected);
+          $selected = json_decode($selected);
+
+          var_dump($selected); } */
+
+          $stmt = $dbh->query("SELECT * FROM bilkarigs");
+          while ($row = $stmt->fetch()) {
+            echo $row['navn']."<br />\n";
+            echo $row['cpu']."<br />\n";
+            echo $row['harddisk']."<br />\n";
+            echo $row['ram']."<br />\n";
+            echo $row['gpu']."<br />\n";
+          }
+
+
+
+        ?>
     </div>
     <div class="pc2">
       <?php  ?>

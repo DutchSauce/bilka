@@ -22,8 +22,8 @@
       </div>
 
       </ul>
+      <img class="logo" src="images/bilka-logo.png" alt="Bilka logo">
       <div class="logo-ikon">
-        <img class="logo" src="images/bilka-logo.png" alt="Bilka logo">
         <img class="search" src="images/icon-search.png" alt="Søg ikon til at søge efter bilkas varer">
         <img class="heart" src="images/icon-heart.png" alt="Ønskeliste">
         <img class="profil" src="images/icon-person.png" alt="Din bilka profil">
@@ -194,11 +194,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <script type="text/javascript">
-    /*
-		function updateSuggestion(){
-	  		localStorage.suggestion = "Processortype: " + localStorage.cpu
-	  	}
-*/
+  $(document).ready(function(){
+  $('#resultat').click(function(){
+    window.location.href = 'resultat.php?data='+btoa(JSON.stringify(localStorage))
+     console.log($('#resultat'));
+   });
+})
+
 
     const Processortype = new Vue({
       el: '#harddisktype',
