@@ -61,8 +61,34 @@
         <p class="undertekst">Normal aflæsning</p>
         <p class="info-tekst">Basal grafikhåndtering. Indbygget i bundkortet.
           Lavere strømforbrug.</p>
-        <button class="vis-eks">VIS EKSEMPEL</button>
-        <button class="question"></button>
+          <div id="ex1" class="modal">
+            <p class="visex-title">4GB RAM</p>
+            <p class="visex-text">Hvis du blot benytter få og meget lette programmer på din bærbar computer samtidig, f.eks surfing og streaming af musik fra f.eks. Spotify, samtidig med tekstbehandling i Microsoft Office-pakken™, så vil 4GB RAM give dig tilstrækkelig ydelse til dette behov.
+            <br><br><b>Vi anbefaler dog minimum 8 GB RAM for, at sikre dig de bedste muligheder for, både at køre store, krævende programmer og samtidig give de bedste muligheder for multitasking.</b></p>
+            <br>
+            <p class="vis-overskrift">FORBURG AF RAM:</p>
+            <div class="faner">Faner <br><b>3+</b></div>
+            <div class="forbrug">
+            <div class="vis-word">
+              <div class="vis-img1"></div>
+              <p class="vis-gb1">0.5 GB</p>
+              <p class="vis-program1">Microsoft Word</p>
+            </div>
+            <div class="vis-chrome">
+            <div class="vis-img2"></div>
+            <p class="vis-gb2">1.5 GB</p>
+            <p class="vis-program2">Google Chrome</p>
+            </div>
+            </div>
+            <br>
+            <p class="vis-infotext">*Ram forbruget variere efter indholdet, og hvor mange GB RAM der i computeren. Der kan derfor opleves udsving ift. til de viste tal.</p>
+            <a href="#" rel="modal:close"></a>
+          </div>
+          <button class="vis-eks2"><a href="#ex1" rel="modal:open" class="eksempel">VIS EKSEMPEL</a></button>
+          <div id="ex4" class="modal">
+            <a href="#" rel="modal:close"></a>
+          </div>
+          <button class="question"><a href="#ex4" rel="modal:open"><p class="q-mark">?</p></a></button>
         </div>
       </label>
 
@@ -76,8 +102,35 @@
         <p class="undertekst">Forbedredt aflæsning</p>
         <p class="info-tekst">Kompleks grafikhåndtering. Komponent for sig selv.
            Højere strømforbrug.</p>
-        <button class="vis-eks2">VIS EKSEMPEL</button>
-        <button class="question"></button>
+           <div id="ex2" class="modal">
+             <p class="visex-title">4GB RAM</p>
+             <p class="visex-text">Hvis du blot benytter få og meget lette programmer på din bærbar computer samtidig, f.eks surfing og streaming af musik fra f.eks. Spotify, samtidig med tekstbehandling i Microsoft Office-pakken™, så vil 4GB RAM give dig tilstrækkelig ydelse til dette behov.
+             <br><br><b>Vi anbefaler dog minimum 8 GB RAM for, at sikre dig de bedste muligheder for, både at køre store, krævende programmer og samtidig give de bedste muligheder for multitasking.</b></p>
+             <br>
+             <p class="vis-overskrift">FORBURG AF RAM:</p>
+             <div class="faner">Faner <br><b>3+</b></div>
+             <div class="forbrug">
+             <div class="vis-word">
+               <div class="vis-img1"></div>
+               <p class="vis-gb1">0.5 GB</p>
+               <p class="vis-program1">Microsoft Word</p>
+             </div>
+             <div class="vis-chrome">
+             <div class="vis-img2"></div>
+             <p class="vis-gb2">1.5 GB</p>
+             <p class="vis-program2">Google Chrome</p>
+             </div>
+             </div>
+             <br>
+             <p class="vis-infotext">*Ram forbruget variere efter indholdet, og hvor mange GB RAM der i computeren.
+               Der kan derfor opleves udsving ift. til de viste tal.</p>
+             <a href="#" rel="modal:close"></a>
+           </div>
+           <button class="vis-eks2"><a href="#ex2" rel="modal:open" class="eksempel">VIS EKSEMPEL</a></button>
+           <div id="ex5" class="modal">
+             <a href="#" rel="modal:close"></a>
+           </div>
+           <button class="question"><a href="#ex5" rel="modal:open"><p class="q-mark">?</p></a></button>
         </div>
       </label>
 
@@ -92,8 +145,9 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <script type="text/javascript">
     /*
 		function updateSuggestion(){
@@ -139,6 +193,17 @@
 		    	localStorage.suggestion = newsuggestion;
 		    } */
       }
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("a[href='#ex1'], a[href='#ex2'], a[href='#ex3'], a[href='#ex4'], a[href='#ex5'], a[href='#ex6']").click(function() {
+        $(this).modal({
+          fadeDuration: 300,
+          fadeDelay: 0.50,
+        });
+        return false;
+      })
     });
   </script>
   <script type="text/javascript" defer src="bilkascript.js"></script>
