@@ -759,6 +759,12 @@ iframe {
   justify-content: center;
   margin-top: 15px; }
 
+.vis-logic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px; }
+
 .faner {
   width: 40px;
   height: 27px;
@@ -770,6 +776,12 @@ iframe {
   position: absolute;
   background: #ffffff;
   left: 65%; }
+
+.img-in-eks {
+  width: 45%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 15px; }
 
 .vis-img1 {
   height: 60px;
