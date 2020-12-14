@@ -150,7 +150,7 @@ nav {
 
   .breadcrumb li+li:before {
     padding: 8px;
-    content: url(images/icon-arrow.png)"\00a0";
+    content: url(/images/icon-arrow.png)"\00a0";
     background-size: cover;
   }
 
@@ -467,7 +467,7 @@ button:hover {
 .cpu-brain {
   width: 331px;
   height: 186px;
-  background-image: url("images/bilka-indgang-med-brainz.png");
+  background-image: url("/images/bilka-indgang-med-brainz.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 21px;
@@ -476,7 +476,7 @@ button:hover {
 .harddisk-img {
   width: 331px;
   height: 186px;
-  background-image: url("images/indkoebsvognsamlet.png");
+  background-image: url("/images/indkoebsvognsamlet.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 21px;
@@ -485,7 +485,7 @@ button:hover {
 .ram-img {
   width: 331px;
   height: 186px;
-  background-image: url("images/bilkareol-Recovered.png");
+  background-image: url("/images/bilkareol-Recovered.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 21px;
@@ -494,7 +494,7 @@ button:hover {
 .grafik-img {
   width: 331px;
   height: 186px;
-  background-image: url("images/grafikkort.png");
+  background-image: url("/images/grafikkort.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 21px;
@@ -682,7 +682,7 @@ iframe {
   position: absolute;
   width: 163px;
   height: 182px;
-  background-image: url("images/bilka-indgang-med-en-brain.gif");
+  background-image: url("/images/bilka-indgang-med-en-brain.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -703,7 +703,7 @@ iframe {
   position: absolute;
   width: 163px;
   height: 182px;
-  background-image: url("images/brainz2.gif");
+  background-image: url("/images/brainz2.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -723,7 +723,7 @@ iframe {
   position: absolute;
   width: 163px;
   height: 182px;
-  background-image: url("images/brainz3.gif");
+  background-image: url("/images/brainz3.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -820,7 +820,7 @@ iframe {
 }
 
 .close-modal {
-  background-image: url("images/close-modal.png") !important;
+  background-image: url("/images/close-modal.png") !important;
 }
 
 .eksempel {
@@ -943,7 +943,7 @@ iframe {
   position: absolute;
   shape-outside: circle();
   clip-path: circle();
-  background-image: url("images/q-mark.png");
+  background-image: url("/images/q-mark.png");
   background-repeat: no-repeat;
   background-size: 25%;
   background-position: center;
@@ -990,7 +990,7 @@ iframe {
 /* CHECKED STYLES */
 [type=radio]:checked+.check-box {
   outline: 3px solid #1DC272;
-  background-image: url("images/check-mark.png");
+  background-image: url("/images/check-mark.png");
   background-position: right 0 top 0;
   background-repeat: no-repeat;
   background-size: 40px;
@@ -1057,7 +1057,7 @@ iframe {
   position: absolute;
   width: 163px;
   height: 182px;
-  background-image: url("images/indkoebsvogn1.gif");
+  background-image: url("/images/indkoebsvogn1.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1078,7 +1078,7 @@ iframe {
   position: absolute;
   width: 163px;
   height: 182px;
-  background-image: url("images/indkoebsvogn2.gif");
+  background-image: url("/images/indkoebsvogn2.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1098,7 +1098,7 @@ iframe {
   position: absolute;
   width: 163px;
   height: 182px;
-  background-image: url("images/indkoebsvognsamlet.gif");
+  background-image: url("/images/indkoebsvognsamlet.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1134,7 +1134,7 @@ iframe {
   position: absolute;
   width: 163px;
   height: 182px;
-  background-image: url("images/bilkareolny2.gif");
+  background-image: url("/images/bilkareolny2.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1155,7 +1155,7 @@ iframe {
   position: absolute;
   width: 163px;
   height: 182px;
-  background-image: url("images/bilkareol-2.gif");
+  background-image: url("/images/bilkareol-2.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1176,7 +1176,7 @@ iframe {
   position: absolute;
   width: 163px;
   height: 182px;
-  background-image: url("images/bilkareol-3.gif");
+  background-image: url("/images/bilkareol-3.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1210,7 +1210,7 @@ iframe {
   position: absolute;
   width: 163px;
   height: 182px;
-  background-image: url("images/pasta-integreret.gif");
+  background-image: url("/images/pasta-integreret.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1233,7 +1233,7 @@ iframe {
   position: absolute;
   width: 163px;
   height: 182px;
-  background-image: url("images/pasta-dedikeret.gif");
+  background-image: url("/images/pasta-dedikeret.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
