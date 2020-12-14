@@ -56,7 +56,7 @@
   <p class="b-guidetext">Du valgte disse specifikationer, som passer bedst til dine behov. Din processor kan klare det meste, især med 8GB RAM som håndterer de fleste opgaver. Med en stabil mængde lagring og SSD, har du opnået en computer til basal forbrug, som kan mange opgaver.</p>
   <div id="harddisktype2">
   <span>{{retext}}</span>
-    <span class="span-resultat">{{cpu}} · {{harddisk}} · {{ram}} · {{grafikkort}} </span>
+    <span class="span-resultat">{{cpu}} · {{harddisk}} GB SSD · {{ram}} GB · {{grafikkort}} GPU </span>
   </div>
 
 <div class="res-undertext">
@@ -77,7 +77,10 @@
   <div class="flere-btn">VIS FLERE</div>
 </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
 
   <script type="text/javascript">
@@ -100,11 +103,23 @@
       },
 
       mounted() {
-
+      console.log("test");
         for (var i = 0; i < localStorage.length; i++) {
           this[localStorage.key(i)] = localStorage.getItem(localStorage.key(i));
         }
 
+        var cpu = window.localStorage.getItem("cpu");
+        var harddisk = window.localStorage.getItem("harddisk");
+        var ram = window.localStorage.getItem("ram");
+        var grafikkort = window.localStorage.getItem("grafikkort");
+
+        $.ajax({
+              url:"find_product.php?cpu="+cpu+"&storage="+harddisk+"&ram="+ram+"&gpu="+grafikkort,
+              method:"GET",
+              success:function(data){
+              console.log(data);
+              }
+          });
       },
       watch: {
         name(newname) {
