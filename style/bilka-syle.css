@@ -4,22 +4,40 @@
   padding: 0; }
 
 html {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: #ffffff; }
 
 body {
+  background-color: #F3F3F3;
+  overflow-x: hidden;
+  margin: 0 50px 0 50px; }
+
+header {
+  width: 100%;
+  height: 140px;
+  background-color: #ffffff;
   overflow-x: hidden; }
 
 nav {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   min-height: 8vh;
   background-color: #ffffff;
   font-family: 'Segoe UI', sans-serif; }
 
 .logo {
+  margin-top: 10px;
   margin-bottom: 10px;
-  width: 18%; }
+  width: 6%;
+  margin-right: 200px;
+  margin-left: 30px; }
+
+.logo-ikon {
+  display: flex;
+  flex-direction: row; }
+
+.logo-link {
+  display: block; }
 
 .nav-links li {
   list-style: none; }
@@ -37,9 +55,17 @@ nav {
   font-size: 14px; }
 
 .burger {
-  display: none;
   cursor: pointer;
-  outline: 3px solid #199FE3; }
+  outline: 3px solid #199FE3;
+  display: block;
+  margin-left: 10px;
+  margin-right: 0;
+  width: 90px;
+  padding: 10px 20px 10px 20px;
+  border: 5px;
+  outline: none;
+  height: 28px;
+  outline: 1px solid #199FE3; }
 
 .burger div {
   width: 25px;
@@ -47,6 +73,233 @@ nav {
   background-color: #199FE3;
   margin: 5px;
   transition: all 0.3s ease; }
+
+.search-bar {
+  width: 550px;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin-right: 15px; }
+
+.logo-ikon .search {
+  width: 5%;
+  margin-right: 15px;
+  float: right; }
+
+.logo-ikon .heart {
+  width: 5%;
+  margin-right: 15px; }
+
+.logo-ikon .profil {
+  width: 5%;
+  margin-right: 15px; }
+
+.logo-ikon .kurv {
+  width: 5%;
+  margin-right: 15px; }
+
+.breadcrumb {
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; }
+
+.breadcrumb li {
+  display: inline;
+  font-size: 14px;
+  color: #5E6C7C;
+  font-family: 'Segoe UI', sans-serif; }
+
+.breadcrumb li + li:before {
+  padding: 8px;
+  content: url(/images/icon-arrow.png) " ";
+  background-size: cover; }
+
+.breadcrumb li a {
+  color: #000;
+  text-decoration: none; }
+
+.breadcrumb li a:hover {
+  color: #199FE3; }
+
+/* SKAL RETTELSE TIL!! HUSK OG FJERN DISPLAY NONE!! */
+.nav-links {
+  position: absolute;
+  left: 0;
+  height: 92vh;
+  top: 8vh;
+  background-color: #5d4954;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  transform: translateX(100%);
+  transition: transform 0.5 ease-in;
+  display: none; }
+
+.nav-links li {
+  opacity: 0; }
+
+.menu {
+  position: absolute;
+  top: 29px;
+  left: 125px;
+  font-weight: bold; }
+
+.nav-active {
+  transform: translateX(0%); }
+
+h1 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 34px;
+  margin-left: 260px;
+  margin-top: 30px; }
+
+.text-forside {
+  color: #5E6C7C;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-left: 260px;
+  margin-right: 260px; }
+
+a {
+  list-style: none;
+  text-decoration: none; }
+
+.pcguide-link {
+  display: flex;
+  justify-content: center; }
+
+.pcguide {
+  width: 650px;
+  height: 45px;
+  font-family: 'Heebo', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  background: #199FE3;
+  padding-top: 20px;
+  margin-top: 50px;
+  box-shadow: 0.5px 0.5px 3px rgba(136, 136, 136, 0.85); }
+
+.sorter-filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; }
+
+.filter {
+  width: 140px;
+  height: 40px;
+  padding-top: 10px;
+  padding-left: 20px;
+  margin-left: 10px;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 400;
+  background-color: #ffffff;
+  box-shadow: 0.5px 0.5px 3px rgba(136, 136, 136, 0.85); }
+
+.filter1 {
+  width: 140px;
+  height: 40px;
+  padding-top: 10px;
+  padding-left: 20px;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 400;
+  background-color: #ffffff;
+  box-shadow: 0.5px 0.5px 3px rgba(136, 136, 136, 0.55); }
+
+.filter2 {
+  width: 140px;
+  height: 40px;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 400;
+  background-color: #ffffff;
+  box-shadow: 0.5px 0.5px 3px rgba(136, 136, 136, 0.85); }
+
+.produkt {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px; }
+
+.flex-product {
+  display: flex;
+  flex-direction: flex-wrap;
+  justify-content: space-around;
+  margin-left: 250px;
+  margin-right: 250px; }
+
+.produkt-pc a {
+  list-style: none;
+  text-decoration: none; }
+
+.produkt-pc {
+  width: 290px;
+  height: 560px;
+  background: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  overflow: auto;
+  box-shadow: 0.5px 0.5px 6px rgba(136, 136, 136, 0.85); }
+
+.frifragt {
+  background: #1E2329;
+  color: #ffffff;
+  font-size: 11px;
+  font-family: 'Heebo', sans-serif;
+  text-align: center;
+  padding-top: 10px;
+  line-height: 11px;
+  width: 50px;
+  height: 35px;
+  border-radius: 100%;
+  margin-top: 10px;
+  margin-left: 10px; }
+
+.lenovo {
+  width: 100%; }
+
+.pc-title {
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Heebo', sans-serif;
+  margin-left: 26px;
+  margin-right: 26px;
+  margin-top: 10px;
+  color: #000000; }
+
+.pc-beskrivelse {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  color: #5E6C7C;
+  margin-top: 10px;
+  margin-left: 26px;
+  margin-right: 26px; }
+
+.click-lager {
+  text-align: right;
+  font-family: 'Segoe UI', sans-serif;
+  color: #5E6C7C;
+  margin-top: 20px;
+  margin-right: 26px; }
+
+.check-lager {
+  width: 5%; }
+
+.hr-produkt {
+  margin-top: 20px;
+  color: #5E6C7C;
+  margin-left: 26px; }
+
+.pris {
+  font-size: 26px;
+  color: #199FE3;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 900; }
 
 @keyframes navLinkFade {
   from {
@@ -67,7 +320,8 @@ nav {
 @media screen and (max-width: 768px) {
   body {
     background-color: #F3F3F3;
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    margin: auto; }
 
   header {
     width: 100%;
@@ -77,7 +331,8 @@ nav {
 
   .logo-ikon {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    margin-top: 10px; }
 
   .logo-link {
     display: block; }
@@ -87,9 +342,6 @@ nav {
     margin-bottom: 10px;
     width: 25%;
     margin-right: 15px; }
-
-  .logo-ikon {
-    margin-top: 10px; }
 
   .logo-ikon .search {
     width: 15%;
@@ -185,7 +437,7 @@ nav {
     text-decoration: none; }
 
   .pcguide {
-    width: 333px;
+    width: 338px;
     height: 45px;
     font-family: 'Heebo', sans-serif;
     font-size: 20px;
@@ -194,26 +446,29 @@ nav {
     background: #199FE3;
     padding-top: 20px;
     margin-top: 50px;
-    margin-left: 21px;
-    margin-right: 25px;
+    margin-left: 11px;
+    margin-right: 15px;
     box-shadow: 1px 3px 6px #888888; }
 
   .sorter-filter {
-    display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 22px; }
+    margin-left: 10px;
+    margin-right: 12px; }
 
   .filter {
     width: 140px;
     height: 40px;
     padding-top: 10px;
     padding-left: 20px;
+    margin-left: 0;
     font-family: 'Heebo', sans-serif;
     font-weight: 400;
     background-color: #ffffff;
     box-shadow: 1px 3px 6px #888888; }
+
+  .filter2 {
+    display: none; }
 
   .produkt {
     font-family: 'Heebo', sans-serif;
@@ -222,16 +477,20 @@ nav {
     text-align: center;
     margin-top: 20px; }
 
+  .flex-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
   .produkt-pc a {
     list-style: none;
     text-decoration: none; }
 
   .produkt-pc {
     width: 333px;
-    height: 545px;
+    height: 560px;
     background: #ffffff;
     margin-top: 20px;
-    margin-left: 21px;
     overflow: auto; }
 
   .frifragt {
@@ -862,7 +1121,7 @@ iframe {
 /* CHECKED STYLES */
 [type=radio]:checked + .check-box {
   outline: 3px solid #1DC272;
-  background-image: url("/images/check-mark.png");
+  background-image: url("images/check-mark.png");
   background-position: right 0 top 0;
   background-repeat: no-repeat;
   background-size: 40px; }
@@ -923,7 +1182,7 @@ iframe {
   position: absolute;
   width: 163px;
   height: 182px;
-  background-image: url("/images/indkoebsvogn1.gif");
+  background-image: url("images/indkoebsvogn1.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -942,7 +1201,7 @@ iframe {
   position: absolute;
   width: 163px;
   height: 182px;
-  background-image: url("/images/indkoebsvogn2.gif");
+  background-image: url("images/indkoebsvogn2.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -960,7 +1219,7 @@ iframe {
   position: absolute;
   width: 163px;
   height: 182px;
-  background-image: url("/images/indkoebsvognsamlet.gif");
+  background-image: url("images/indkoebsvognsamlet.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -993,7 +1252,7 @@ iframe {
   position: absolute;
   width: 163px;
   height: 182px;
-  background-image: url("/images/bilkareolny2.gif");
+  background-image: url("images/bilkareolny2.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1012,7 +1271,7 @@ iframe {
   position: absolute;
   width: 163px;
   height: 182px;
-  background-image: url("/images/bilkareol-2.gif");
+  background-image: url("images/bilkareol-2.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1031,7 +1290,7 @@ iframe {
   position: absolute;
   width: 163px;
   height: 182px;
-  background-image: url("/images/bilkareol-3.gif");
+  background-image: url("images/bilkareol-3.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1063,7 +1322,7 @@ iframe {
   position: absolute;
   width: 163px;
   height: 182px;
-  background-image: url("/images/pasta-integreret.gif");
+  background-image: url("images/pasta-integreret.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1084,7 +1343,7 @@ iframe {
   position: absolute;
   width: 163px;
   height: 182px;
-  background-image: url("/images/pasta-dedikeret.gif");
+  background-image: url("images/pasta-dedikeret.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
