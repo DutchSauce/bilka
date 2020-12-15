@@ -344,6 +344,12 @@ main {
   width: 100%;
   height: 600px; }
 
+.main2 {
+  height: 950px; }
+
+.main3 {
+  height: 700px; }
+
 .b-guidetitel {
   font-family: 'Heebo', sans-serif;
   font-size: 34px;
@@ -372,7 +378,7 @@ main {
   position: absolute;
   justify-content: center;
   left: 44%;
-  top: 60%; }
+  top: 101%; }
 
 .startguide {
   width: 254px;
@@ -405,7 +411,8 @@ main {
   height: 486px;
   position: absolute;
   left: 56.5%;
-  z-index: 500; }
+  z-index: 500;
+  display: none; }
 
 .gif {
   width: 50%;
@@ -413,9 +420,28 @@ main {
   padding-bottom: 30%;
   position: relative;
   margin: 0 auto;
-  pointer-events: none; }
+  pointer-events: none;
+  display: none; }
 
-iframe {
+.gif2 {
+  width: 50%;
+  height: 0;
+  left: 25%;
+  top: 0;
+  padding-bottom: 20%;
+  position: relative;
+  pointer-events: none;
+  display: block; }
+
+video {
+  display: block; }
+
+.iframe2 {
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+
+.iframe {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -425,22 +451,26 @@ iframe {
   display: inline-flex;
   position: absolute;
   justify-content: center;
-  top: 90%;
-  clear: both; }
+  top: 75%;
+  left: 40%;
+  clear: both;
+  cursor: pointer; }
 
 .videre-tilbage2 {
   display: inline-flex;
   position: absolute;
   left: 49%;
-  top: 60%;
-  clear: both; }
+  top: 58%;
+  clear: both;
+  cursor: pointer; }
 
 .videre-tilbage3 {
   display: inline-flex;
   position: absolute;
-  left: 44%;
-  top: 80%;
-  clear: both; }
+  left: 42%;
+  top: 73%;
+  clear: both;
+  cursor: pointer; }
 
 .tilbage {
   border: none;
@@ -448,21 +478,25 @@ iframe {
   font-family: 'Heebo', sans-serif;
   color: #199FE3;
   font-weight: bold;
-  padding: 5px 30px;
+  font-size: 16px;
+  padding: 20px 40px;
   box-shadow: 1px 3px 6px #888888;
   margin-right: 5px;
-  clear: both; }
+  clear: both;
+  cursor: pointer; }
 
 .videre {
   border: none;
   background-color: #199FE3;
   font-family: 'Heebo', sans-serif;
   font-weight: bold;
+  font-size: 16px;
   color: #ffffff;
-  padding: 5px 30px;
+  padding: 20px 40px;
   box-shadow: 1px 3px 6px #888888;
   margin-left: 5px;
-  clear: both; }
+  clear: both;
+  cursor: pointer; }
 
 @keyframes navLinkFade {
   from {
@@ -1028,7 +1062,7 @@ iframe {
   position: absolute;
   justify-content: center;
   top: 90%;
-  left: 42%;
+  left: 40%;
   clear: both; }
 
 .tilbage-gra {
@@ -1037,7 +1071,8 @@ iframe {
   font-family: 'Heebo', sans-serif;
   color: #199FE3;
   font-weight: bold;
-  padding: 5px 30px;
+  font-size: 16px;
+  padding: 20px 40px;
   box-shadow: 1px 3px 6px #888888;
   margin-right: 5px;
   clear: both; }
@@ -1048,9 +1083,10 @@ iframe {
   font-family: 'Heebo', sans-serif;
   font-weight: bold;
   color: #ffffff;
-  padding: 5px 30px;
+  padding: 20px 40px;
   box-shadow: 1px 3px 6px #888888;
   margin-left: 5px;
+  font-size: 16px;
   clear: both; }
 
 /* RESULTAT SIDE - resultat.html */
@@ -1577,7 +1613,7 @@ iframe {
     position: absolute;
     justify-content: center;
     left: 0;
-    top: 83%; }
+    top: 86%; }
 
   .startguide {
     width: 254px;
@@ -1607,22 +1643,15 @@ iframe {
     height: 520px;
     position: absolute;
     left: 83%;
-    z-index: 500; }
+    z-index: 500;
+    display: block; }
 
   .gif {
-    width: 70%;
-    height: 0;
-    padding-bottom: 140%;
-    position: relative;
-    margin: 0 auto; }
+    display: block;
+    margin-left: 15%; }
 
-  iframe {
-    width: 100%;
-    height: 100%; }
-
-  .span2 {
-    display: none;
-    position: absolute; }
+  .gif2 {
+    display: none; }
 
   .step2 {
     height: 20px;
@@ -1675,6 +1704,9 @@ iframe {
   main {
     background-color: #F3F3F3;
     width: 100%;
+    height: 820px; }
+
+  .main2 {
     height: 820px; }
 
   /* VÆLG PROCESSOR SIDE - vaelg-processor.html */
@@ -1853,7 +1885,8 @@ iframe {
     font-size: 13px;
     font-family: 'Heebo', sans-serif;
     font-weight: 400;
-    text-align: center; }
+    text-align: center;
+    margin-top: 0px; }
 
   .vis-overskrift {
     text-align: center;
@@ -1998,6 +2031,7 @@ iframe {
     width: 100%;
     position: absolute;
     justify-content: center;
+    left: 0;
     top: 93%; }
 
   .videre-tilbage2 {
@@ -2012,7 +2046,7 @@ iframe {
     display: inline-flex;
     position: absolute;
     left: 17.5%;
-    top: 94%;
+    top: 91%;
     clear: both; }
 
   .tilbage {
