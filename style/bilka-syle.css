@@ -577,14 +577,14 @@ video {
   width: 10%;
   top: 1%;
   left: 34.7%;
-  z-index: 10; }
+  z-index: 1; }
 
 .anbefaler2 {
   position: absolute;
   width: 10%;
   top: 1%;
   left: 18%;
-  z-index: 10; }
+  z-index: 1; }
 
 .cpu2-indgang-vaelg {
   position: absolute;
@@ -1868,7 +1868,7 @@ video {
     padding: 5px; }
 
   .modal {
-    z-index: 15;
+    z-index: 5;
     height: 611px;
     -webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
@@ -2088,14 +2088,14 @@ video {
     width: 32%;
     top: 30%;
     left: 5%;
-    z-index: 10; }
+    z-index: 1; }
 
   .anbefaler2 {
     position: absolute;
     width: 32%;
     top: 4%;
     left: 1%;
-    z-index: 10; }
+    z-index: 1; }
 
   /* HARDDISK SIDE - harddisk.html */
   .hdd-indgang {
