@@ -77,14 +77,35 @@
 </div>
 
   <div class="computere">
-    <div class="pc1">
-
+    <div v-if="suggestions.length == 0">
+        Der er ingen Computere der passer til dig - Tage guiden om igen.
+      </div>
+    <div class="pc1" v-for="suggestion in suggestions">
+      <div class="row">
+        <div class="col-6">
+          <img v-bind:src="'/bilka/images/products/'+suggestion.product_image" alt="">
+        </div>
+        <div class="col-6">
+          <div class="product-name">{{suggestion.product_name}}</div>
+          <div class="product-krav">{{suggestion.product_processor}} - {{suggestion.product_ram}}GB - {{suggestion.product_storage}}GB - {{suggestion.product_gpu}} GPU</div>
+          <div class="product-price">{{suggestion.product_price}} ,-</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 text-center">
+          <button class="read-mere">LÆS MERE</button>
+        </div>
+        <div class="col-6 text-center">
+          <button class="buy-me"><svg xmlns="http://www.w3.org/2000/svg" width="22.814" height="25.237" viewBox="0 0 22.814 25.237">
+  <path id="Icon_material-add-shopping-cart" data-name="Icon material-add-shopping-cart" d="M12.817,11.114H15.08V7.509h3.4v-2.4h-3.4V1.5H12.817V5.105h-3.4v2.4h3.4ZM8.29,21.93a2.409,2.409,0,0,0,0,4.807,2.408,2.408,0,0,0,0-4.807Zm11.317,0a2.408,2.408,0,1,0,2.263,2.4A2.334,2.334,0,0,0,19.607,21.93ZM8.482,18.024l.034-.144,1.019-1.959h8.431a2.236,2.236,0,0,0,1.98-1.238l4.368-8.424L22.345,5.105h-.011l-1.245,2.4-3.123,6.009H10.021l-.147-.324L7.339,7.509l-1.075-2.4L5.2,2.7H1.5v2.4H3.763l4.074,9.121L6.31,17.171a2.436,2.436,0,0,0-.283,1.154,2.343,2.343,0,0,0,2.263,2.4H21.87v-2.4H8.765A.3.3,0,0,1,8.482,18.024Z" transform="translate(-1.5 -1.5)" fill="#fff"/>
+</svg>
+</button>
+        </div>
+      </div>
     </div>
-    <div class="pc2">
 
-    </div>
   </div>
-
+</div>
 <div class="flere">
   <div class="flere-btn">VIS FLERE</div>
 </div>
@@ -102,8 +123,8 @@
 	  	}
 */
 
-    const Processortype = new Vue({
-      el: '#harddisktype2',
+    const app = new Vue({
+      el: '#resultat',
       data: {
         name: '',
         retext: '',
@@ -111,11 +132,11 @@
         cpu: '',
         ram:'',
         grafikkort:'',
-        suggestion: 'N/A'
+        suggestions: []
       },
 
       mounted() {
-      console.log("test");
+      console.log("Everything is running");
         for (var i = 0; i < localStorage.length; i++) {
           this[localStorage.key(i)] = localStorage.getItem(localStorage.key(i));
         }
@@ -124,12 +145,14 @@
         var harddisk = window.localStorage.getItem("harddisk");
         var ram = window.localStorage.getItem("ram");
         var grafikkort = window.localStorage.getItem("grafikkort");
+        var suggestion = window.localStorage.getItem("suggestion");
 
         $.ajax({
               url:"/sider-php/find_product.php?cpu="+cpu+"&storage="+harddisk+"&ram="+ram+"&gpu="+grafikkort,
               method:"GET",
               success:function(data){
-              console.log(data);
+                console.log(data);
+              app.suggestions = data;
               }
           });
       },
@@ -159,7 +182,7 @@
 
     });
   </script>
-  <script type="text/javascript" defer src="/javascript/bilkascript.js"></script>
+  <script type="text/javascript" defer src="../javascript/bilkascript.js"></script>
 </body>
 
 </html>

@@ -1150,12 +1150,49 @@ video {
   box-shadow: 1px 3px 6px #888888;
   margin-bottom: 0; }
 
-.pc2 {
-  width: 351px;
-  height: 226px;
-  background-color: #ffffff;
-  box-shadow: 1px 3px 6px #888888;
-  margin-top: 0; }
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.col-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  font-family: 'Heebo', sans-serif; }
+
+.product-name {
+  font-weight: bold; }
+
+.product-krav {
+  font-size: 12px; }
+
+.product-price {
+  color: #199FE3;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px; }
+
+.read-mere {
+  background-color: #199FE3;
+  width: 156px;
+  height: 43px;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px; }
+
+.buy-me {
+  background-color: #1DC272;
+  width: 156px;
+  height: 43px;
+  border: none; }
+
+.text-center {
+  text-align: center;
+  margin-top: 15px; }
 
 .flere {
   display: flex;
