@@ -12,6 +12,10 @@ body {
   overflow-x: hidden;
   margin: 0 150px 0 150px; }
 
+img {
+  max-width: 100%;
+}
+
 header {
   width: 100%;
   height: 140px;
@@ -129,7 +133,7 @@ nav {
 
 .breadcrumb li + li:before {
   padding: 8px;
-  content: url(/images/icon-arrow.png) " ";
+  content: url(/bilka/images/icon-arrow.png) " ";
   background-size: cover; }
 
 .breadcrumb li a {
@@ -341,14 +345,23 @@ a {
 
 main {
   background-color: #F3F3F3;
-  width: 100%;
+  width: auto;
   height: 600px; }
 
 .main2 {
-  height: 950px; }
+    height: 100%;
+    width: auto;
+  	padding: 10px;
+  	overflow:hidden;
+  	right: 150px;
+  	left: 150px;
+  	position: absolute;
+	}
 
 .main3 {
-  height: 700px; }
+    height: 700px;
+  	width: auto;
+}
 
 .b-guidetitel {
   font-family: 'Heebo', sans-serif;
@@ -378,7 +391,7 @@ main {
   position: absolute;
   justify-content: center;
   left: 44%;
-  top: 101%; }
+  top: 89%; }
 
 .startguide {
   width: 254px;
@@ -556,7 +569,7 @@ video {
   position: absolute;
   width: 223px;
   height: 238px;
-  background-image: url("/images/bilka-indgang-med-en-brain.gif");
+  background-image: url("/bilka/images/bilka-indgang-med-en-brain.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -590,7 +603,7 @@ video {
   position: absolute;
   width: 223px;
   height: 238px;
-  background-image: url("/images/brainz2.gif");
+  background-image: url("/bilka/images/brainz2.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -608,7 +621,7 @@ video {
   position: absolute;
   width: 223px;
   height: 238px;
-  background-image: url("/images/brainz3.gif");
+  background-image: url("/bilka/images/brainz3.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -697,7 +710,7 @@ video {
   padding: 15px 10px 0 10px !important; }
 
 .close-modal {
-  background-image: url("/images/close-modal.png") !important; }
+  background-image: url("/bilka/images/close-modal.png") !important; }
 
 .eksempel {
   color: white; }
@@ -813,7 +826,7 @@ video {
   position: absolute;
   shape-outside: circle();
   clip-path: circle();
-  background-image: url("/images/q-mark.png");
+  background-image: url("/bilka/images/q-mark.png");
   background-repeat: no-repeat;
   background-size: 25%;
   background-position: center;
@@ -857,7 +870,7 @@ video {
 /* CHECKED STYLES */
 [type=radio]:checked + .check-box {
   outline: 3px solid #1DC272;
-  background-image: url("/images/check-mark.png");
+  background-image: url("/bilka/images/check-mark.png");
   background-position: right 0 top 0;
   background-repeat: no-repeat;
   background-size: 50px; }
@@ -895,7 +908,7 @@ video {
   position: absolute;
   width: 223px;
   height: 238px;
-  background-image: url("/images/indkoebsvogn1.gif");
+  background-image: url("/bilka/images/indkoebsvogn1.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -915,7 +928,7 @@ video {
   position: absolute;
   width: 223px;
   height: 238px;
-  background-image: url("/images/indkoebsvogn2.gif");
+  background-image: url("/bilka/images/indkoebsvogn2.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -933,7 +946,7 @@ video {
   position: absolute;
   width: 223px;
   height: 238px;
-  background-image: url("/images/indkoebsvognsamlet.gif");
+  background-image: url("/bilka/images/indkoebsvognsamlet.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -968,7 +981,7 @@ video {
   position: absolute;
   width: 223px;
   height: 238px;
-  background-image: url("/images/bilkareolny2.gif");
+  background-image: url("/bilka/images/bilkareolny2.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -988,7 +1001,7 @@ video {
   position: absolute;
   width: 223px;
   height: 238px;
-  background-image: url("/images/bilkareol-2.gif");
+  background-image: url("/bilka/images/bilkareol-2.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1008,7 +1021,7 @@ video {
   position: absolute;
   width: 223px;
   height: 238px;
-  background-image: url("/images/bilkareol-3.gif");
+  background-image: url("/bilka/images/bilkareol-3.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1043,7 +1056,7 @@ video {
   position: absolute;
   width: 223px;
   height: 238px;
-  background-image: url("/images/pasta-integreret.gif");
+  background-image: url("/bilka/images/pasta-integreret.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1063,7 +1076,7 @@ video {
   position: absolute;
   width: 223px;
   height: 238px;
-  background-image: url("/images/pasta-dedikeret.gif");
+  background-image: url("/bilka/images/pasta-dedikeret.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1141,6 +1154,13 @@ video {
   flex-direction: row;
   justify-content: center;
   align-items: center; }
+
+  .ingen_computer {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px;
+  }
 
 .pc1 {
   width: 351px;
@@ -1297,7 +1317,7 @@ video {
 
   .breadcrumb li + li:before {
     padding: 8px;
-    content: url(/images/icon-arrow.png) " ";
+    content: url(/bilka/images/icon-arrow.png) " ";
     background-size: cover; }
 
   .breadcrumb li a {
@@ -1510,7 +1530,7 @@ video {
     margin-bottom: 20px;
     position: absolute;
     right: 0;
-    top: 14vh; }
+    top: 0vh; }
 
   .luk-tab a {
     text-decoration: none;
@@ -1591,7 +1611,7 @@ video {
   .cpu-brain {
     width: 331px;
     height: 186px;
-    background-image: url("/images/bilka-indgang-med-brainz.png");
+    background-image: url("/bilka/images/bilka-indgang-med-brainz.png");
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: 21px; }
@@ -1599,7 +1619,7 @@ video {
   .harddisk-img {
     width: 331px;
     height: 186px;
-    background-image: url("/images/indkoebsvognsamlet.png");
+    background-image: url("/bilka/images/indkoebsvognsamlet.png");
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: 21px; }
@@ -1607,7 +1627,7 @@ video {
   .ram-img {
     width: 331px;
     height: 186px;
-    background-image: url("/images/bilkareol-Recovered.png");
+    background-image: url("/bilka/images/bilkareol-Recovered.png");
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: 21px; }
@@ -1615,7 +1635,7 @@ video {
   .grafik-img {
     width: 331px;
     height: 186px;
-    background-image: url("/images/grafikkort.png");
+    background-image: url("/bilka/images/grafikkort.png");
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: 21px; }
@@ -1664,7 +1684,7 @@ video {
     position: absolute;
     justify-content: center;
     left: 0;
-    top: 86%; }
+    top: 88%; }
 
   .startguide {
     width: 254px;
@@ -1755,14 +1775,27 @@ video {
   main {
     background-color: #F3F3F3;
     width: 100%;
-    height: 820px; }
+    height: 85%;
+    position: absolute;
+  }
 
   .main2 {
-    height: 820px; }
+    height: auto;
+    position: absolute;
+    overflow: auto;
+    left: 0;
+    right: 0;
+  }
+
+  .main3 {
+    height: 85%;
+}
 
   /* VÆLG PROCESSOR SIDE - vaelg-processor.html */
   #Processortype {
-    height: 820px; }
+    height: auto;
+  	overflow: auto;
+  }
 
   .cpu-vaelg {
     display: flex;
@@ -1786,7 +1819,7 @@ video {
     position: absolute;
     width: 163px;
     height: 182px;
-    background-image: url("/images/bilka-indgang-med-en-brain.gif");
+    background-image: url("/bilka/images/bilka-indgang-med-en-brain.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1806,7 +1839,7 @@ video {
     position: absolute;
     width: 163px;
     height: 182px;
-    background-image: url("/images/brainz2.gif");
+    background-image: url("/bilka/images/brainz2.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1825,7 +1858,7 @@ video {
     position: absolute;
     width: 163px;
     height: 182px;
-    background-image: url("/images/brainz3.gif");
+    background-image: url("/bilka/images/brainz3.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1914,7 +1947,7 @@ video {
     padding: 15px 10px 0 10px !important; }
 
   .close-modal {
-    background-image: url("/images/close-modal.png") !important; }
+    background-image: url("/bilka/images/close-modal.png") !important; }
 
   .eksempel {
     color: white; }
@@ -2030,7 +2063,7 @@ video {
     position: absolute;
     shape-outside: circle();
     clip-path: circle();
-    background-image: url("/images/q-mark.png");
+    background-image: url("/bilka/images/q-mark.png");
     background-repeat: no-repeat;
     background-size: 25%;
     background-position: center;
@@ -2072,7 +2105,7 @@ video {
   /* CHECKED STYLES */
   [type=radio]:checked + .check-box {
     outline: 3px solid #1DC272;
-    background-image: url("/images/check-mark.png");
+    background-image: url("/bilka/images/check-mark.png");
     background-position: right 0 top 0;
     background-repeat: no-repeat;
     background-size: 40px; }
@@ -2097,7 +2130,7 @@ video {
     display: inline-flex;
     position: absolute;
     left: 17.5%;
-    top: 91%;
+    top: 93%;
     clear: both; }
 
   .tilbage {
@@ -2165,7 +2198,7 @@ video {
     position: absolute;
     width: 163px;
     height: 182px;
-    background-image: url("/images/indkoebsvogn1.gif");
+    background-image: url("/bilka/images/indkoebsvogn1.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2184,7 +2217,7 @@ video {
     position: absolute;
     width: 163px;
     height: 182px;
-    background-image: url("/images/indkoebsvogn2.gif");
+    background-image: url("/bilka/images/indkoebsvogn2.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2202,7 +2235,7 @@ video {
     position: absolute;
     width: 163px;
     height: 182px;
-    background-image: url("/images/indkoebsvognsamlet.gif");
+    background-image: url("/bilka/images/indkoebsvognsamlet.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2237,7 +2270,7 @@ video {
     position: absolute;
     width: 163px;
     height: 182px;
-    background-image: url("/images/bilkareolny2.gif");
+    background-image: url("/bilka/images/bilkareolny2.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2257,7 +2290,7 @@ video {
     position: absolute;
     width: 163px;
     height: 182px;
-    background-image: url("/images/bilkareol-2.gif");
+    background-image: url("/bilka/images/bilkareol-2.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2277,7 +2310,7 @@ video {
     position: absolute;
     width: 163px;
     height: 182px;
-    background-image: url("/images/bilkareol-3.gif");
+    background-image: url("/bilka/images/bilkareol-3.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2311,7 +2344,7 @@ video {
     position: absolute;
     width: 163px;
     height: 182px;
-    background-image: url("/images/pasta-integreret.gif");
+    background-image: url("/bilka/images/pasta-integreret.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2333,7 +2366,7 @@ video {
     position: absolute;
     width: 163px;
     height: 182px;
-    background-image: url("/images/pasta-dedikeret.gif");
+    background-image: url("/bilka/images/pasta-dedikeret.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2407,20 +2440,65 @@ video {
     flex-direction: column;
     align-items: center; }
 
-  .pc1 {
-    width: 351px;
-    height: 226px;
-    background-color: #ffffff;
-    box-shadow: 1px 3px 6px #888888;
-    margin-bottom: 5px;
-    margin-right: 0; }
+  .ingen_computer {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px;
+  }
 
-  .pc2 {
-    width: 351px;
-    height: 226px;
-    background-color: #ffffff;
-    box-shadow: 1px 3px 6px #888888;
-    margin-top: 5px; }
+  .pc1 {
+  width: 351px;
+  height: 226px;
+  margin-right: 0px;
+  background-color: #ffffff;
+  box-shadow: 1px 3px 6px #888888;
+  margin-bottom: 20px; }
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.col-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  font-family: 'Heebo', sans-serif; }
+
+.product-name {
+  font-weight: bold; }
+
+.product-krav {
+  font-size: 12px; }
+
+.product-price {
+  color: #199FE3;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px; }
+
+.read-mere {
+  background-color: #199FE3;
+  width: 156px;
+  height: 43px;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px; }
+
+.buy-me {
+  background-color: #1DC272;
+  width: 156px;
+  height: 43px;
+  border: none; }
+
+.text-center {
+  text-align: center;
+  margin-top: 15px; }
+
 
   .flere {
     display: flex;

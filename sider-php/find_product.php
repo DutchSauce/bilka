@@ -19,8 +19,6 @@ include('database_connection.php');
 	$result = $statement->fetchAll(PDO::FETCH_ASSOC);
 	$total_row = $statement->rowCount();
 
-
-
-  echo json_encode($result);
+echo json_encode($result);
 
  ?>

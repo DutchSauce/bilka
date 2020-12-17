@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta property="og:image" content="images/bilka-logo.png">
-  <link data-n-head="ssr" rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
-  <link rel="stylesheet" href="/style/bilka-syle.css" type="text/css">
+  <link data-n-head="ssr" rel="icon" type="image/png" sizes="32x32" href="/bilka/images/favicon.png">
+  <link rel="stylesheet" href="/bilka/style/bilka-syle.css" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <title>Bilka</title>
 </head>
@@ -22,22 +22,22 @@
       </div>
 
       </ul>
-      <img class="logo" src="/images/bilka-logo.png" alt="Bilka logo">
+      <img class="logo" src="/bilka/images/bilka-logo.png" alt="Bilka logo">
       <div class="logo-ikon">
         <div class="search-bar">
-        <img class="search" src="/images/icon-search.png" alt="Søg ikon til at søge efter bilkas varer">
+        <img class="search" src="/bilka/images/icon-search.png" alt="Søg ikon til at søge efter bilkas varer">
         </div>
         <div>
-        <img class="heart" src="/images/icon-heart.png" alt="Ønskeliste">
+        <img class="heart" src="/bilka/images/icon-heart.png" alt="Ønskeliste">
         <p class="ikon-text">Tilbudsavis</p>
         </div>
         <p class="ikon-text">Find Bilka</p>
         <div>
-        <img class="profil" src="/images/icon-person.png" alt="Din bilka profil">
+        <img class="profil" src="/bilka/images/icon-person.png" alt="Din bilka profil">
         <p class="ikon-text">Log ind</p>
         </div>
           <div>
-        <img class="kurv" src="/images/icon-cart.png" alt="Din indkøbskurv">
+        <img class="kurv" src="/bilka/images/icon-cart.png" alt="Din indkøbskurv">
         </div>
         <p class="ikon-text2">Kurv</p>
         </div>
@@ -58,15 +58,17 @@
     </ul>
 
   </header>
+  <main>
   <div class="luk-tab">
-    <a href="/index.html">&times;</a>
+    <a href="/bilka/index.html">×</a>
   </div>
 
   <h3 class="b-guidetitel">DETTE PASSER TIL DIG</h3>
   <h3 class="b-guideoverskrift">RESULTAT AF GUIDE</h3>
+<div id="resultat">
+  <p class="b-guidetext">Du har gennemført guiden og vi kan nu ud fra dine valg anbefale dig en computer, der har disse specifikationer som passer netop til dit behov. Specifikationerne kan ses herunder.  </p>
 
-  <p class="b-guidetext">Du valgte disse specifikationer, som passer bedst til dine behov. Din processor kan klare det meste, især med 8GB RAM som håndterer de fleste opgaver. Med en stabil mængde lagring og SSD, har du opnået en computer til basal forbrug, som kan mange opgaver.</p>
-  <div id="harddisktype2">
+  <div>
   <span>{{retext}}</span>
     <span class="span-resultat">{{cpu}} · {{harddisk}} GB SSD · {{ram}} GB · {{grafikkort}} GPU </span>
   </div>
@@ -77,8 +79,8 @@
 </div>
 
   <div class="computere">
-    <div v-if="suggestions.length == 0">
-        Der er ingen Computere der passer til dig - Tage guiden om igen.
+    <div class="ingen_computer" v-if="suggestions.length == 0">
+        Der er ingen computere der passer til dig.
       </div>
     <div class="pc1" v-for="suggestion in suggestions">
       <div class="row">
@@ -103,9 +105,8 @@
         </div>
       </div>
     </div>
-
+	</div>
   </div>
-</div>
 <div class="flere">
   <div class="flere-btn">VIS FLERE</div>
 </div>
@@ -148,7 +149,7 @@
         var suggestion = window.localStorage.getItem("suggestion");
 
         $.ajax({
-              url:"/sider-php/find_product.php?cpu="+cpu+"&storage="+harddisk+"&ram="+ram+"&gpu="+grafikkort,
+              url:"/bilka/sider-php/find_product.php?cpu="+cpu+"&storage="+harddisk+"&ram="+ram+"&gpu="+grafikkort,
               method:"GET",
               success:function(data){
                 console.log(data);
@@ -182,7 +183,8 @@
 
     });
   </script>
-  <script type="text/javascript" defer src="../javascript/bilkascript.js"></script>
+  <script type="text/javascript" defer src="/bilka/javascript/bilkascript.js"></script>
+    </main>
 </body>
 
 </html>
