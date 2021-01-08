@@ -6,8 +6,6 @@ include('database_connection.php');
   $product->storage = $_GET["storage"];
   $product->ram = $_GET["ram"];
   $product->gpu = $_GET["gpu"];
-
-
   $query = "select * from product where product_processor = :processor and product_ram = :ram and product_storage = :storage and product_gpu = :gpu;";
   $statement = $connect->prepare($query);
 	$statement->execute([
