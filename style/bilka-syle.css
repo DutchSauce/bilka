@@ -362,7 +362,7 @@ main {
     height: 700px;
   	width: auto;
 }
-
+  
 .b-guidetitel {
   font-family: 'Heebo', sans-serif;
   font-size: 34px;
@@ -1786,14 +1786,14 @@ video {
     left: 0;
     right: 0;
   }
-
+  
   .main3 {
     height: 85%;
 }
 
   /* VÆLG PROCESSOR SIDE - vaelg-processor.html */
   #Processortype {
-    height: auto;
+    height: auto; 
   	overflow: auto;
   }
 
@@ -2446,7 +2446,7 @@ video {
     font-size: 18px;
     padding: 10px;
   }
-
+  
   .pc1 {
   width: 351px;
   height: 226px;
